@@ -102,8 +102,26 @@ header .right {
 }
 
 .btm-nav .links {
+
+      @media screen and (min-width: 960px) {
     width: 12em;
     justify-content: end;
+    }
+}
+
+.user p {
+    display: none;
+@media screen and (min-width: 960px) {
+    display: flex;
+}
+}
+
+.user {
+              @media screen and (min-width: 960px) {
+                  display: flex;
+                  flex-direction: row;
+                  gap: 0.5em;
+              }
 }
 
 /* Hamburger knop */
@@ -246,8 +264,6 @@ form input {
     flex-direction: row;
     align-content: center;
     flex-wrap: wrap;
-
-
 }
 
 .cagetory-items .usp-besteld {
@@ -262,4 +278,11 @@ form input {
     gap: 1em;
     align-items: center;
     padding: 0;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.btm-nav .links li:hover {
+    transform: scale(1.05);
+    transition: 0.2s ease-in-out;
 }
