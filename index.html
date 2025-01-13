@@ -12,14 +12,14 @@
 
 <body>
 
-    <header>
+    <header class="primary-background">
 
         <!-- Logo -->
-         <a href="index.html" aria-label="Home">
-             <img src="#" alt="logo Weird Cool Stuff">
+         <a class="logo secondary-background" href="index.html" aria-label="Home">
+             <img class="secondary-background" src="/assets/logo-weird-cool-stuff.svg" alt="logo Weird Cool Stuff">
          </a>
 
-         <div>
+         <div class="right">
             <div class="top-nav">
                 <p>Besteld voor 23:59, morgen in je toko</p>
                 <a href=""></a>
@@ -29,27 +29,58 @@
             
             <div class="btm-nav">
                   <nav class="navbar">
-                      <button>
-                          <img src="assets/hamburger-icon.svg" alt="hamburger menu">
+                      <button class="hamburger-btn secondary-background" id="menuButton">
+                          <img src="assets/hamburger-icon-closed.svg" alt="hamburger menu">
                           <p>Onze categoriëen</p>
                       </button>
 
-                      <ul>
-                          <li><a href="#"></a></li>
-                          <li><a href="#"></a></li>
-                          <li><a href="#"></a></li>
-                          <li><a href="#"></a></li>
-                      </ul>
+                      <div class="cagetory-items primary-background" id="menu">
+    
+                        <form action="#">
+                            <input type="text" placeholder="Search Courses" name="search">
+                        </form>
+
+                        <p>Onze categoriëen</p>
+
+                          <ul>
+                              <li><a href="#">Mokken</a></li>
+                              <li><a href="#">Mokken</a></li>
+                              <li><a href="#">Mokken</a></li>
+                              <li><a href="#">Mokken</a></li>
+                              <li><a href="#">Mokken</a></li>
+                              <li><a href="#">Mokken</a></li>
+                              <li><a href="#">Mokken</a></li>
+                              <li><a href="#">Mokken</a></li>
+                              <li><a href="#">Mokken</a></li>
+                               <li><a href="#">Mokken</a></li>
+                          </ul>
+
+                          <div class="divider"></div>
+
+                          <div class="overige">
+                            <div class="sterren">
+                                <p>9.5 / 10</p>
+                                <img src="assets/4.5-sterren.svg" alt="">
+                            </div>
+                            
+                            <div class="divider-vertical"></div>
+
+                            <img src="assets/vlag-nederland.svg" alt="">
+                          </div>
+
+                          <p class="usp-besteld">Besteld voor 23:59, morgen in je toko</p>
+
+                      </div>
                   </nav>
 
-                  <form action="">
+                  <form action="#">
                     <input type="text" placeholder="Search Courses" name="search">
                   </form>
                    
                   <ul class="links">
-                    <li><img src="#" alt=""><a href="#"></a>Hello</li>
-                    <li><img src="#" alt=""><a href="#"></a></li>
-                    <li><img src="#" alt=""><a href="#"></a></li>
+                    <li><img src="assets/person.svg" alt=""><a href="#"></a>Hello</li>
+                    <li><img src="assets/favorite.svg" alt=""><a href="#"></a></li>
+                    <li><img src="assets/card-icon.svg"><a href="#"></a></li>
                   </ul>
             </div>
          </div>
