@@ -292,7 +292,7 @@ form input {
 .banner-home {
     display: flex;
     flex-direction: column;
-    background-image: url(/assets/banner-home-wcs.jpg);
+    background-image: url(../assets/banner-home-wcs.jpg);
     background-position: 70% -20%;
     height: 70vh;
     width: 100%;
