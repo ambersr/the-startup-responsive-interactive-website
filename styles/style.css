@@ -134,7 +134,7 @@ header .right {
     height: 3.5em;
     width: 3.5em;
     border-radius: var(--big-rounded);
-    border: 1px solid;
+    border: 1px solid var();
     display: flex;
     justify-content: center;
     align-items: center;
@@ -217,8 +217,11 @@ header .right {
      }
 }
 
-form input {
+.btm-nav form input {
     width: 100%;
+      background-image: url('/assets/search-icon.svg');
+      background-position: 97% 12px;
+      background-repeat: no-repeat;
 }
 
 .cagetory-items ul {
@@ -840,11 +843,14 @@ form input {
 .right .foto-1 {
     width: 85%;
     align-self: flex-end;
+    border-radius: var(--small-rounded);
+
 }
 
 .right .foto-2 {
     width: 250px;
     margin-top: -120px;
+    border-radius: var(--small-rounded);
 }
 
 /* ----------------------------- Sectie 8 footer --------------------------------- */
@@ -891,7 +897,11 @@ footer h4 {
 .nieuwsbrief input {
     width: 100%;
     border: 1px solid #dadada;
+    padding-left: 40px;
     border-radius: var(--small-rounded);
+    background-image: url(/assets/icon-mail.svg);
+    background-position: 2% 12px;
+    background-repeat: no-repeat;
 }
 
 .nieuwsbrief button {
@@ -901,6 +911,15 @@ footer h4 {
 .social-media .socials {
     display: flex;
     flex-direction: row;
+}
+
+.social-media .socials li {
+    transition: .2s ease-in-out;
+}
+
+.social-media .socials li:hover {
+    transform: scale(1.1);
+    transition: .2s ease-in-out;
 }
 
 .social-media .socials li img {
@@ -915,10 +934,12 @@ footer h4 {
     flex-wrap: wrap;
     border-top: 1px solid #d6d6d6;
     border-bottom: 1px solid #d6d6d6;
-    padding: 2em 0em 2em 0em;
+    padding: 2em 0em 2em 1em;
+    gap: 1em;
 
     @media screen and (min-width: 920px) {
         justify-content: center;
+        gap: 2em;
     }
 }
 

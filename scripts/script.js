@@ -33,3 +33,39 @@ document.querySelector('#next').addEventListener('click', () => {   // selecteer
     updateCarousel();  // voer dan de functie updateCarousel uit
   }
 });
+
+
+
+
+
+
+
+
+
+
+const blogartikelen = document.querySelector('.blogartikelen');
+const prevButton = document.querySelector('.prev');
+const nexxtButton = document.querySelector('.next');
+
+let currentIndex = 0;
+
+nexxtButton.addEventListener('click', () => {
+    const totalItems = document.querySelectorAll('.blogartikel').length;
+    if (currentIndex < totalItems - 1) {
+        currentIndex++;
+        blogartikelen.style.transform = `translateX(-${currentIndex * 100}%)`;
+    }
+});
+
+prevButton.addEventListener('click', () => {
+    if (currentIndex > 0) {
+        currentIndex--;
+        blogartikelen.style.transform = `translateX(-${currentIndex * 100}%)`;
+    }
+});
+
+
+
+
+
+
