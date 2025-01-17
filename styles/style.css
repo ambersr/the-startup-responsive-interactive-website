@@ -899,7 +899,7 @@ footer h4 {
     border: 1px solid #dadada;
     padding-left: 40px;
     border-radius: var(--small-rounded);
-    background-image: url(../assets/icon-mail.svg);
+    background-image: url('../assets/icon-mail.svg');
     background-position: 2% 12px;
     background-repeat: no-repeat;
 }
