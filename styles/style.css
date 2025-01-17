@@ -355,7 +355,7 @@ form input {
 }
 
 .usp-orders li:before {
-    content: url(./assets/check-groen.svg);
+    content: url(../assets/check-groen.svg);
     margin: 4px 4px 0px 0px;
 }
 
