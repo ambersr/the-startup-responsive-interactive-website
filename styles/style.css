@@ -15,10 +15,14 @@ header {
     display: flex;
     position: sticky;
     top: 0;
-    width: 90%;
+    width: 93.5%;
     align-self: center;
     border-radius: 1em 0em 1em 1em;
     z-index: 30;
+
+      @media screen and (min-width: 960px) {
+          width: 85%;
+      }
 }
 
 /* Logo in nav */
@@ -46,6 +50,7 @@ header .right {
     flex-direction: column;
     width: 100%;
     justify-content: center;
+    padding: 0;
 }
 
 /* Top navigatie */
@@ -73,6 +78,7 @@ header .right {
     flex-direction: row;
     gap: 1em;
     width: unset;
+    padding: 0;
 }
 
 /* Btm navigatie */
@@ -148,7 +154,8 @@ header .right {
         display: flex;
         flex-direction: row;
         color: var(--secondary-text-color);
-        font-family: var(--font-paragraph);
+        font-family: var(--font-header);
+        font-size: 16px;
     }
 }
 
@@ -159,9 +166,9 @@ header .right {
     position: fixed;
     padding: 2em;
     top: 80px;
-    left: 5%;
+    left: 3.3%;
     translate: 0% -120%;
-    width: 90%;
+    width: 93.5%;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -177,20 +184,20 @@ header .right {
          max-height: 28em;
         overflow-y: unset;
         width: 15em;
-        translate: 80% -150%;
+        translate: 83% -150%;
+        left: 7%;
 
      }
 }
 
 .cagetory-items.open {
     translate: 0%;
-    width: 90%;
+    width: 93.5%;
     padding: 2em;
 
      @media screen and (min-width: 960px) {
          width: 15em;
-             translate: 80% 10%;
-
+             translate: 82% 10%;
      }
 }
 
@@ -255,7 +262,7 @@ form input {
 }
 
 .usp-besteld:before {
-    content: url('/assets/favorite.svg');
+    content: url('/assets/check-groen.svg');
     margin: 3px 3px 0px 0px;
 }
 
@@ -324,28 +331,38 @@ form input {
 
 .banner-home .info a {
     align-self: center;
+    margin-top: 2em;
+}
+
+.info .label {
+    padding: 0.2em 1em 0.2em 1em;
+    margin: 0.2em 1em 1em 1em;
+    font-family: var(--font-header);
+    border-radius: var(--small-rounded);
 }
 
 /* ---------------------------- USP's -------------------------------- */
 .usp-orders {
     list-style-type: none;
     display: flex;
-    gap: 2em;
+    gap: 0.5em;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 1em 0em 1em 0em;
  
          @media screen and (min-width: 820px) {
             flex-direction: row;
-             padding: 2em 3em 2em 3em;
+             padding: 1em 3em 1em 3em;
          }
 
          @media screen and (min-width: 1120px) {
-             padding: 2em 7em 2em 7em;
+            gap: 2em;
+             padding: 1em 7em 1em 7em;
          }
 
          @media screen and (min-width: 1600px) {
-             padding: 2em 4em 2em 4em;
+             padding: 1em 4em 1em 4em;
          }
 }
 
@@ -386,10 +403,13 @@ form input {
     flex-direction: row;
     overflow: hidden;
     padding: 0;
-    gap: 2em;
+    gap: 1em;
+    margin-bottom: -4em;
 
     @media screen and (min-width: 1100px) {
         flex-direction: row;
+         gap: 2em;
+        margin-bottom: -2em;
     }
 }
 
@@ -398,21 +418,53 @@ form input {
     flex-direction: column;
     justify-self: center;
 
-    @media screen and (min-width: 1100px) {
+    @media screen and (min-width: 900px) {
         display: flex;
         align-items: center;
+        flex: 0 0 128px;
     }
 }
 
 .category-list li img {
-    width: 100px;
+    width: 120px;
 }
 
 .category-list li h3 {
     font-size: 16px;
     text-align: center;
+    padding-top: 1em;
 }
 
+/* Carousel */
+.carousel-wrapper-list {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Button carousel */
+#volgende {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--big-rounded);
+    border: 2px solid #E5E7EB;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+    align-self: flex-end;
+    translate: 15px -90px;
+
+     @media screen and (min-width: 900px) {
+          translate: 20px -110px;
+     }
+}
+
+#volgende:hover {
+    background-color: var(--primary-highlight-color);
+    border: var(--primary-highlight-color);
+    transition: 0.2s ease-in-out;
+}
 
 /* ------------------------- Sectie 4 producten -----------------------------*/
 
@@ -420,22 +472,52 @@ form input {
     display: flex;
     flex-direction: column;
        overflow: hidden;
-    gap: 1em;
+       margin-bottom: -2em;
+}
+
+.producten-banner {
+    display: flex;
+    flex-direction: column;
+
+      @media screen and (min-width: 1100px) {
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+      }
+}
+
+.producten-banner a {
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.producten-banner a:before {
+     content: url(../assets/icon-right-balck.svg);
+     margin: 0px 2px 0px 0px;
+}
+
+.carousel-wrapper {
+    overflow: hidden;
 }
 
 .producten {
-    padding: 0;
-    display: flex;
-    flex-direction: row;
-    gap: 1.5em;
-          overflow: hidden;
+     display: flex;
+     flex-direction: row;
+     gap: 1.5em;
+     transition: transform 0.5s ease-in-out;
+     padding: 0;
+       scroll-behavior: smooth;
 }
 
 /* Product */
 .product {
     list-style-type: none;
     width: 280px;
+    flex: 0 0 350px;
+    width: 400px;
     cursor: pointer;
+    flex-shrink: 0;
 }
 
 .product h3 {
@@ -447,9 +529,7 @@ form input {
 }
 
 .favorite-icon {
-    position: absolute;
-    margin-top: 15px;
-    margin-left: -35px;
+    translate: 310px -340px;
     cursor: pointer;
 }
 
@@ -465,6 +545,48 @@ form input {
     border-radius: var(--big-rounded);
 }
 
+/* Carousel */
+
+/* Animatie sliden */
+.producten.bewegen {
+    translate: -100% 0%;
+}
+
+
+.product.slide-0 {
+    transform: translateX(0%);
+}
+
+.producten.slide-1 {
+    transform: translateX(-350px);
+}
+.producten.slide-2 {
+    transform: translateX(-700px);
+}
+
+
+
+
+/* Button carousel */
+#next {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--big-rounded);
+    border: 2px solid #E5E7EB;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+    align-self: flex-end;
+    translate: 18px -280px;
+}
+
+#next:hover {
+    background-color: var(--primary-highlight-color);
+    border: var(--primary-highlight-color);
+    transition: 0.2s ease-in-out;
+}
 
 /* ----------------------------- Sectie 5 banner met kaartjes --------------------------------- */
 
@@ -489,7 +611,7 @@ form input {
 .cards {
     list-style-type: none;
     padding: 0;
-    width: 90%;
+     width: 93.5%;
     margin-top: -10em;
     display: flex;
     flex-direction: column;
@@ -497,6 +619,7 @@ form input {
 
     @media screen and (min-width: 960px) {
         flex-direction: row;
+        width: 85%;
     }
 }
 
@@ -504,9 +627,12 @@ form input {
     display: flex;
     flex-direction: column;
     gap: 1em;
+    justify-content: flex-end;
+    border-radius: var(--small-rounded);
 
      @media screen and (min-width: 1100px) {
          flex-direction: row;
+             gap: 2em;
      }
 }
 
@@ -515,13 +641,25 @@ form input {
 }
 
 .cards li img {
-    width: 95%;
-    height: 30vh;
-    object-fit: cover;
+        border-radius: var(--small-rounded);
+    @media screen and (min-width: 1100px) {
+        height: 100%;
+    }
+}
+
+.cards li .mobiel {
+            width: 95%;
+    @media screen and (min-width: 1100px) {
+        display: none;
+    }
+}
+
+.cards li .desktop{
+    display: none;
 
     @media screen and (min-width: 1100px) {
-        width: 250px;
-        height: 100%;
+        display: flex;
+        width: 120%;
     }
 }
 
@@ -543,6 +681,7 @@ form input {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+    padding: 0;
 }
 
 /* Card right */
@@ -562,6 +701,7 @@ form input {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+    padding: 0;
 }
 
 /* ----------------------------- Sectie 6 blog artikelen --------------------------------- */
@@ -570,11 +710,32 @@ form input {
     display: flex;
     flex-direction: column;
     gap: 1em;
+
+    @media screen and (min-width: 920px) {
+         gap: 0em;
+    }
 }
 
 .nieuws .info {
     display: flex;
     flex-direction: column;
+
+    @media screen and (min-width: 920px) {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.nieuws .info a {
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.nieuws .info a:before {
+        content: url(../assets/icon-right-balck.svg);
+        margin: 0px 2px 0px 0px;
 }
 
 .blogartikelen {
@@ -598,7 +759,7 @@ form input {
 
 .blogartikel .banner {
     width: 100%;
-    height: 400px;
+    height: 350px;
     object-fit: cover;
 }
 
@@ -609,6 +770,10 @@ form input {
 .blogartikel .btm h3 {
     color: var(--secondary-text-color);
     font-size: 22px;
+}
+
+.blogartikel .btm a {
+    text-decoration: none;
 }
 
 .btn-nieuws {
@@ -632,7 +797,7 @@ form input {
 }
 
 /* Left */
-.left {
+.member .left {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -641,12 +806,20 @@ form input {
         padding: 0em 0em 0em 5em;
     }
 }
-.left .checklist {
+.member .left .checklist {
     list-style-type: none;
     padding: 0em 0em 1em 0em;
     display: flex;
     flex-direction: column;
     gap: 0.5em;
+}
+
+.member .left a {
+    border: 2px solid var(--primary-text-color);
+}
+
+.member .left a:hover {
+    border: 2px solid var(--primary-text-color);
 }
 
 .checklist-item {
