@@ -83,7 +83,7 @@
                   <ul class="links">
                     <li class="user"><img src="./assets/person.svg" alt=""><a href="#"></a><p>Hello</p></li>
                     <li><img src="./assets/favorite.svg" alt=""><a href="#"></a></li>
-                    <li><img src="./assets/card-icon.svg" alt=""><a href="#"></a></li>
+                    <li><img class="card-icon" src="./assets/card-icon.svg" alt=""><a href="#"></a></li>
                   </ul>
             </div>
          </div>
@@ -159,27 +159,44 @@
              <ul class="producten">
 
                  <!-- Product 1 -->
-                 <li class="product">
-                     <div class="top">
-                         <img class="product-img" src="./assets/tanden-kaars.jpg" alt="">
-                         <img class="favorite-icon" src="./assets/favorite.svg" alt="icon favorite">
-                     </div>
+               <li class="product">
+                   <div class="top">
+                       <img class="product-img" src="./assets/tanden-kaars.jpg" alt="">
+                       <svg class="favorite-icon" id="firsticon" width="21" height="19" viewbox="0 0 21 19" fill="none"
+                           xmlns="http://www.w3.org/2000/svg">
+                           <path
+                               d="M18.0883 2.20944L18.0872 2.20847C15.9519 0.383831 12.9008 0.746857 10.9852 2.60127C9.09153 0.740641 6.0106 0.389153 3.88161 2.20847L3.88161 2.20847L3.88047 2.20944C1.46821 4.27709 1.35556 7.94293 3.49936 10.1633L3.50097 10.165L9.55634 16.4076C10.3255 17.2286 11.6433 17.2286 12.4124 16.4076L18.4678 10.165L18.4694 10.1633C20.6132 7.94293 20.5006 4.27709 18.0883 2.20944Z"
+                               stroke="white" stroke-width="2" />
+                       </svg>
 
-                     <section class="btm">
-                         <h3>Tandenkaars</h3>
-                         <div class="info">
-                             <p class="price"><span class="price-left-small">6.</span><span class="price-right-small">99</span></p>
-                             <a class="btn-card primary-highlight" href="#"><img src="./assets/plus-icon.svg"
-                                     alt=""><img src="./assets/add-to-card-icon.svg" alt="add to card"></a>
-                         </div>
-                     </section>
-                 </li>
+                       <svg class="favorite-icon" id="tweede" width="21" height="19" viewbox="0 0 21 19" fill="none"
+                           xmlns="http://www.w3.org/2000/svg">
+                           <path
+                               d="M18.0883 2.20944L18.0872 2.20847C15.9519 0.383831 12.9008 0.746857 10.9852 2.60127C9.09153 0.740641 6.0106 0.389153 3.88161 2.20847L3.88161 2.20847L3.88047 2.20944C1.46821 4.27709 1.35556 7.94293 3.49936 10.1633L3.50097 10.165L9.55634 16.4076C10.3255 17.2286 11.6433 17.2286 12.4124 16.4076L18.4678 10.165L18.4694 10.1633C20.6132 7.94293 20.5006 4.27709 18.0883 2.20944Z"
+                               stroke="white" stroke-width="2" />
+                       </svg>
+                   </div>
+
+                   <section class="btm">
+                       <h3>Tandenkaars</h3>
+                       <div class="info">
+                           <p class="price"><span class="price-left-small">6.</span><span
+                                   class="price-right-small">99</span></p>
+                           <a href="#" class="btn-card">
+                               <img class="plus-icon" src="./assets/plus-icon.svg" alt="">
+                               <img class="shop-icon"
+                                   src="./assets/add-to-card-icon.svg">
+                           </a>
+
+                       </div>
+                   </section>
+               </li>
 
                  <!-- Product 2 -->
                  <li class="product">
                      <div class="top">
                          <img class="product-img" src="./assets/katten-borstel.png" alt="">
-                         <img class="favorite-icon" src="./assets/favorite.svg" alt="icon favorite">
+                         <img class="favorite-icon" src="./assets/icon-favorite-white.svg" alt="icon favorite">
                      </div>
 
                      <section class="btm">
@@ -196,7 +213,7 @@
                  <li class="product">
                      <div class="top">
                          <img class="product-img" src="./assets/joker-pantoffels.png" alt="">
-                         <img class="favorite-icon" src="./assets/favorite.svg" alt="icon favorite">
+                         <img class="favorite-icon" src="./assets/icon-favorite-white.svg" alt="icon favorite">
                      </div>
 
                      <section class="btm">
@@ -213,7 +230,7 @@
                  <li class="product">
                      <div class="top">
                          <img class="product-img" src="./assets/perenlamp.jpg" alt="">
-                         <img class="favorite-icon" src="./assets/favorite.svg" alt="icon favorite">
+                         <img class="favorite-icon" src="./assets/icon-favorite-white.svg" alt="icon favorite">
                      </div>
 
                      <section class="btm">
@@ -230,7 +247,7 @@
                  <li class="product">
                      <div class="top">
                          <img class="product-img" src="./assets/pan-gezicht.jpg" alt="">
-                         <img class="favorite-icon" src="./assets/favorite.svg" alt="icon favorite">
+                         <img class="favorite-icon" src="./assets/icon-favorite-white.svg" alt="icon favorite">
                      </div>
 
                      <section class="btm">
@@ -247,7 +264,7 @@
                  <li class="product">
                      <div class="top">
                          <img class="product-img" src="./assets/tanden-kaars.jpg" alt="">
-                         <img class="favorite-icon" src="./assets/favorite.svg" alt="icon favorite">
+                         <img class="favorite-icon" src="./assets/icon-favorite-white.svg" alt="icon favorite">
                      </div>
 
                      <section class="btm">
@@ -262,6 +279,12 @@
 
              </ul>
 
+        </div>
+
+        <div class="pop-up">
+            <img class="plus-icon" src="./assets/icon-check-green-full.svg"
+                alt="Weird cool stuff member">
+            <p>Toegevoegd aan winkelwagen</p>
         </div>
     
         <button class="primary-background" id="next"><img src="./assets/icon-right-balck.svg" alt=""></button>
@@ -363,6 +386,17 @@
         <img class="foto-2" src="./assets/logo-member.svg" alt="Weird cool stuff member">
     </div>
    </div>
+
+
+   <div class="btn-test">
+      <a class="btn-card primary-highlight" href="#"><img class="plus-icon" src="./assets/plus-icon.svg" alt=""><img
+              src="./assets/add-to-card-icon.svg" alt="add to card"></a>
+   </div>
+
+
+
+
+
 
     <!-- Footer -->
      <footer>

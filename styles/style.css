@@ -521,6 +521,7 @@ header .right {
     width: 400px;
     cursor: pointer;
     flex-shrink: 0;
+    padding-bottom: 15px;
 }
 
 .product h3 {
@@ -531,10 +532,60 @@ header .right {
     width: 100%;
 }
 
+/* Wishlist icon */
+
 .favorite-icon {
     translate: 310px -340px;
     cursor: pointer;
+    width: 20px;
+    transition: .2s ease-in-out;
 }
+
+
+#tweede {
+        translate: 286px -340px;
+}
+
+@keyframes flyAnimation {
+   30% {
+       transform: scale(1.4);
+   }
+
+   50% {
+       transform: scale(.8);
+   }
+
+   100% {
+       transform: scale(1);
+   }
+}
+
+.fly {
+    animation: flyAnimation 1s forwards;
+    z-index: 30;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.favorite-icon:hover {
+    transform: scale(1.1);
+    transition: .2s ease-in-out;
+}
+
+.favorite-icon:hover path {
+    fill: white;
+    stroke: white;
+}
+
 
 .btm .info {
     display: flex;
@@ -543,10 +594,198 @@ header .right {
     align-items: center;
 }
 
+
+
+
+
 .btn-card {
-    padding: 0.7em 1em 0.3em 1em;
+    padding: 0.4em 0.8em 0.1em 0.8em;
     border-radius: var(--big-rounded);
+    background-color: var(--primary-highlight-color);
+    border: 2px solid var(--primary-highlight-color);
+    text-decoration: none;
+    transition: transform all 0.3s ease;
 }
+
+.btn-card:hover {
+    transform: scale(1.05);
+}
+
+.btn-card:active {
+    transform: scale(0.8);
+}
+
+/* Styling voor btn-card wanneer het eerste icoon actief is */
+.first-icon-active {
+    background-color: var(--secondary-background-color);
+    border: 2px solid var(--secondary-background-color);
+}
+
+.plus-icon {
+    width: 30px;
+    height: 30px;
+    transition: all 0.3s ease;
+    color: #000;
+}
+
+.plus-icon:hover {
+    transition: all 0.3s ease;
+}
+
+
+/* Popup */
+.pop-up {
+    display: none;
+    /* Zorg ervoor dat de pop-up standaard verborgen is */
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--primary-background-color);
+    color: #000;
+    padding: 1em 1.5em 1em 1.5em;
+    border: 2px solid #D9D9D9;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.pop-up img {
+    width: 25px;
+}
+
+.show {
+    display: flex;
+    gap: 1em;
+    left: unset;
+    align-self: center;
+    /* De pop-up wordt zichtbaar */
+    animation: slideInUp 1s ease-out forwards;
+    /* Animatie toevoegen */
+}
+
+@keyframes slideInUp {
+    0% {
+        transform: translateY(100%);
+        visibility: visible;
+    }
+
+    100% {
+        transform: translateY(0);
+        visibility: visible;
+    }
+}
+
+
+/* Voeg een fade-in effect toe aan de card-icon */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.9);
+        /* Kleinere grootte voor extra visueel effect */
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+        /* Normale grootte */
+    }
+}
+
+/* Animatieklasse voor card-icon */
+.icon-switch-animation {
+    animation: bounceInRight 0.5s ease-in-out;
+}
+
+
+.bounceInRight {
+    -webkit-animation-name: bounceInRight;
+    animation-name: bounceInRight;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@-webkit-keyframes bounceInRight {
+
+    0%,
+    60%,
+    75%,
+    90%,
+    100% {
+        -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+        transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    }
+
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(3000px, 0, 0);
+        transform: translate3d(3000px, 0, 0);
+    }
+
+    60% {
+        opacity: 1;
+        -webkit-transform: translate3d(-25px, 0, 0);
+        transform: translate3d(-25px, 0, 0);
+    }
+
+    75% {
+        -webkit-transform: translate3d(10px, 0, 0);
+        transform: translate3d(10px, 0, 0);
+    }
+
+    90% {
+        -webkit-transform: translate3d(-5px, 0, 0);
+        transform: translate3d(-5px, 0, 0);
+    }
+
+    100% {
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+@keyframes bounceInRight {
+
+    0%,
+    60%,
+    75%,
+    90%,
+    100% {
+        -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+        transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    }
+
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(3000px, 0, 0);
+        transform: translate3d(3000px, 0, 0);
+    }
+
+    60% {
+        opacity: 1;
+        -webkit-transform: translate3d(-25px, 0, 0);
+        transform: translate3d(-25px, 0, 0);
+    }
+
+    75% {
+        -webkit-transform: translate3d(10px, 0, 0);
+        transform: translate3d(10px, 0, 0);
+    }
+
+    90% {
+        -webkit-transform: translate3d(-5px, 0, 0);
+        transform: translate3d(-5px, 0, 0);
+    }
+
+    100% {
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+×
+
 
 /* Carousel */
 
@@ -954,4 +1193,18 @@ footer h4 {
             flex-direction: row;
             gap: 2em;
         }
+}
+
+
+
+
+
+
+
+
+
+
+.btn-test {
+    display: flex;
+    flex-direction: row;
 }

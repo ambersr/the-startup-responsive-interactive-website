@@ -43,28 +43,102 @@ document.querySelector('#next').addEventListener('click', () => {   // selecteer
 
 
 
-const blogartikelen = document.querySelector('.blogartikelen');
-const prevButton = document.querySelector('.prev');
-const nexxtButton = document.querySelector('.next');
+// const blogartikelen = document.querySelector('.blogartikelen');
+// const prevButton = document.querySelector('.prev');
+// const nexxtButton = document.querySelector('.next');
 
-let currentIndex = 0;
+// let currentIndex = 0;
 
-nexxtButton.addEventListener('click', () => {
-    const totalItems = document.querySelectorAll('.blogartikel').length;
-    if (currentIndex < totalItems - 1) {
-        currentIndex++;
-        blogartikelen.style.transform = `translateX(-${currentIndex * 100}%)`;
+// nexxtButton.addEventListener('click', () => {
+//     const totalItems = document.querySelectorAll('.blogartikel').length;
+//     if (currentIndex < totalItems - 1) {
+//         currentIndex++;
+//         blogartikelen.style.transform = `translateX(-${currentIndex * 100}%)`;
+//     }
+// });
+
+// prevButton.addEventListener('click', () => {
+//     if (currentIndex > 0) {
+//         currentIndex--;
+//         blogartikelen.style.transform = `translateX(-${currentIndex * 100}%)`;
+//     }
+// });
+
+
+
+
+
+
+
+// // Code voor openklappen hamburger menu in nav
+// const favoriteIcon = document.querySelector("#tweede"); // Selecteert de knop met het id 'menuButton'
+
+// favoriteIcon.addEventListener("click", addedWishlist); // Als je het menu openklikt dan roept hij 'toggleMenu' aan
+
+// function addedWishlist() { // Voegt of verwijdert de class 'open' van het menu-element 'hetMenu'
+//     favoriteIcon.classList.toggle("fly"); // Dit zorgt ervoor dat het menu zichtbaar wordt of verbergt bij elke klik
+// }
+
+
+
+let plusIcon = document.querySelector(".plus-icon");
+let shopIcon = document.querySelector(".shop-icon");
+let cardIcon = document.querySelector(".card-icon");
+let btnCard = document.querySelector(".btn-card");
+let popUp = document.querySelector(".pop-up");
+let iconState = true;
+
+btnCard.addEventListener("click", function() {
+    if (iconState) {
+        plusIcon.src = './assets/check-groen.svg'; 
+        cardIcon.src = './assets/card-icon-15.svg'; 
+        shopIcon.src = './assets/icon-shopping-card-white.svg';
+        popUp.classList.add('show'); 
+        btnCard.classList.add('first-icon-active'); 
+        
+        // Voeg de animatie toe voor de card-icon
+        cardIcon.classList.add('icon-switch-animation');
+        
+        // Verwijder de animatieklasse na 0.5s (de duur van de animatie)
+        setTimeout(function() {
+            cardIcon.classList.remove('icon-switch-animation');
+        }, 500); // Verwijder de animatie na 500ms
+
+        // Verberg de pop-up na 5 seconden
+        setTimeout(function() {
+            popUp.classList.remove('show');
+        }, 5000);
+    } else {
+        plusIcon.src = './assets/plus-icon.svg'; 
+        cardIcon.src = './assets/card-icon.svg'; 
+        shopIcon.src = './assets/add-to-card-icon.svg';
+        popUp.classList.remove('show'); 
+        btnCard.classList.remove('first-icon-active'); 
     }
+
+    iconState = !iconState;
 });
 
-prevButton.addEventListener('click', () => {
-    if (currentIndex > 0) {
-        currentIndex--;
-        blogartikelen.style.transform = `translateX(-${currentIndex * 100}%)`;
-    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+document.querySelectorAll('a[href="#"]').forEach(link => {
+  link.addEventListener('click', function(event) {
+    event.preventDefault(); // Voorkomt het springen naar de bovenkant
+  });
 });
-
-
 
 
 
