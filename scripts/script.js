@@ -1,4 +1,5 @@
 // Code voor openklappen hamburger menu in nav
+
 const menuButton = document.querySelector("#menuButton"); // Selecteert de knop met het id 'menuButton'
 
 const hetMenu = document.querySelector("#menu"); // Selecteert het menu-element met het id 'menu'
@@ -10,8 +11,7 @@ function toggleMenu() { // Voegt of verwijdert de class 'open' van het menu-elem
 }
 
 
-
-
+// Carousel producten
 
 let slidesContainer = document.querySelector('.producten'); // Container van de producten
 let slides = document.querySelectorAll('.product'); // Alle producten
@@ -26,7 +26,6 @@ function updateCarousel() {
   slidesContainer.classList.add(`slide-${currentSlide}`);  // Voeg de klasse toe die overeenkomt met de huidige slide
 }
 
-
 document.querySelector('#next').addEventListener('click', () => {   // selecteer de knop 'volgende' en voer dan een click uit met een functie.
   if (currentSlide < slides.length - 1) {  // wanneer de huidige slide kleiner is dan de totale slides - 1
     currentSlide++; // verhoog de waarde van de slide met 1
@@ -35,53 +34,9 @@ document.querySelector('#next').addEventListener('click', () => {   // selecteer
 });
 
 
+// Product toevoegen aan winkelwagen
 
-
-
-
-
-
-
-
-// const blogartikelen = document.querySelector('.blogartikelen');
-// const prevButton = document.querySelector('.prev');
-// const nexxtButton = document.querySelector('.next');
-
-// let currentIndex = 0;
-
-// nexxtButton.addEventListener('click', () => {
-//     const totalItems = document.querySelectorAll('.blogartikel').length;
-//     if (currentIndex < totalItems - 1) {
-//         currentIndex++;
-//         blogartikelen.style.transform = `translateX(-${currentIndex * 100}%)`;
-//     }
-// });
-
-// prevButton.addEventListener('click', () => {
-//     if (currentIndex > 0) {
-//         currentIndex--;
-//         blogartikelen.style.transform = `translateX(-${currentIndex * 100}%)`;
-//     }
-// });
-
-
-
-
-
-
-
-// // Code voor openklappen hamburger menu in nav
-// const favoriteIcon = document.querySelector("#tweede"); // Selecteert de knop met het id 'menuButton'
-
-// favoriteIcon.addEventListener("click", addedWishlist); // Als je het menu openklikt dan roept hij 'toggleMenu' aan
-
-// function addedWishlist() { // Voegt of verwijdert de class 'open' van het menu-element 'hetMenu'
-//     favoriteIcon.classList.toggle("fly"); // Dit zorgt ervoor dat het menu zichtbaar wordt of verbergt bij elke klik
-// }
-
-
-
-let plusIcon = document.querySelector(".plus-icon");
+let plusIcon = document.querySelector(".plus-icon"); 
 let shopIcon = document.querySelector(".shop-icon");
 let cardIcon = document.querySelector(".card-icon");
 let btnCard = document.querySelector(".btn-card");
@@ -102,7 +57,7 @@ btnCard.addEventListener("click", function() {
         // Verwijder de animatieklasse na 0.5s (de duur van de animatie)
         setTimeout(function() {
             cardIcon.classList.remove('icon-switch-animation');
-        }, 500); // Verwijder de animatie na 500ms
+        }, 500); // Verwijder de animatie na 10000ms
 
         // Verberg de pop-up na 5 seconden
         setTimeout(function() {
@@ -116,24 +71,11 @@ btnCard.addEventListener("click", function() {
         btnCard.classList.remove('first-icon-active'); 
     }
 
-    iconState = !iconState;
+    iconState = !iconState; 
 });
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// Zorgt ervoor dat een knop met een link: '#' niet omhoog scrollt
 document.querySelectorAll('a[href="#"]').forEach(link => {
   link.addEventListener('click', function(event) {
     event.preventDefault(); // Voorkomt het springen naar de bovenkant
