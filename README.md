@@ -1,18 +1,19 @@
 # Platform Weird Cool Stuff
-Tijdens sprint 5 heb ik me verdiept in interacties met JavaScript. Als onderdeel hiervan heb ik een extra pagina toegevoegd: de Partnerpagina. Voor deze pagina heb ik een interactieve carousel ontworpen, waarmee gebruikers de recensies en ervaringen van partners van Bieb in Bloei kunnen bekijken.
+Tijdens sprint 5 heb ik me verdiept in interacties met JavaScript. Alle leerstof van afgelopen sprints worden toegepast in dit project. Daarbij kijk ik naar een semantieke HTML-opbouw, styleguids & stylesheets, mobile-first (media queries), Interacties i.c.m javascript en code conventies. In dit project heb ik van mijn opdrachtgever Lab Digital de opdracht gekregen om een goed doordacht mobile-first website te bouwen.
 
-Linkje naar de pagina: https://ambersr.github.io/fix-the-flow-interactive-website/partner.html
+Linkje naar de pagina: https://ambersr.github.io/the-startup-responsive-interactive-website/
 
 #### Wie is Lab Digital?
-Bieb in Bloei is onderdeel van Buurtcampus Oost. Dit is een sociale groene ontmoetingsplek waar plantenliefhebbers bij elkaar komen om actief deel te nemen aan vergroening van de omgeving van Amsterdam. Bieb in Bloei biedt verschillende diensten aan waaronder: Zaden- en stekjesbibliotheek, groene educatieve workshops over duurzaamheid, tuinieren en vergroening en geveltuin project waaarin je van alles leert over duurzaamheid, verzorging van stekjes en zaadjes.
+Lab Digital is een jong dynamisch bedrijf opgericht in 2015. Ze ontwikkelen webshops voor b2b en b2c bedrijven. Daarnaast beschikken ze over een groot ervaren team met expertise in technologie. Ze onderscheiden zich van andere bedrijven door het leveren van hoogwaardige digitale oplossingen en ze staan bekend om het bouwen van langdurige, betrouwbare samenwerkingen met klanten.
 
 #### Vraag opdrachtgever
-De opdrachtgever heeft de volgende vraag aan mij opgesteld: Ontwerp en ontwikkel een digitaal platform voor Bieb in Bloei van Buurtcampus Oost, waarbij Harry op een creatieve manier naar voren komt.
+De opdrachtgever heeft de volgende vraag aan mij opgesteld: ontwikkel een mobile-first platform. De focus ligt op een optimale ervaring voor mobiel. Er is goed nagedacht over positionering en de layout op een mobiel scherm. Het platform is responsive, op deze manier blijft de pagina gebruiksvriendelijk.
 
 ## Inhoudsopgave Readme
 
   * [Beschrijving](#beschrijving)
   * [Kenmerken](#kenmerken)
+  * [Kenmerken](#Code conventies)
   * [Bronnen](#bronnen)
 
 ## Beschrijving
@@ -65,6 +66,19 @@ De styling wordt ingeladen aan de hand van een stylesheet waarin het huisstijl v
 
 ### Belangrijke aspecten Javascript
 De Javascript wordt gebruikt om de animatie van het openklappen en dichtklappen van het hamburger menu te functioneren. Daarnaast wordt dit ook gebruik voor de functionaliteit van de carousel met reviews.
+
+## Kenmerken
+### Ademruimte en inspringen
+Hier komt een stuk tekst
+
+### Volgorde en nesten van CSS selectors
+Hier komt een stuk tekst
+
+### Nesten van media queries
+Hier komt een stuk tekst
+
+### Naamgeving
+Hier komt een stuk tekst
 
 ## Bronnen
 - Huisstijl (kleuren en fonts uit de website gehaald) Linkje: https://bieb-in-bloei.vercel.app/
