@@ -572,7 +572,6 @@ header .right {
 
 
 
-
 .knop-add-card {
     display: flex;
     flex-direction: row-reverse;
@@ -582,24 +581,20 @@ header .right {
 .knop-add-card p {
     width: 130px;
     line-height: 20px;
-    opacity: 0;
-    /* Begin onzichtbaar */
-    visibility: hidden;
-    /* Zichtbaarheid uitgeschakeld */
-    transition: opacity 0.5s ease, visibility 0.5s ease;
-    /* Zachtjes overgaan van zichtbaar naar onzichtbaar */
-}
-
-.knop-add-card:hover p {
     opacity: 1;
-    /* Volledig zichtbaar bij hover */
-    visibility: visible;
-    /* Zichtbaarheid ingeschakeld bij hover */
+    transition: opacity 0.5s ease;
+    /* Zorg ervoor dat alleen opacity wordt geanimeerd */
+    pointer-events: auto;
+    /* Zorg ervoor dat het element interacties kan ontvangen */
 }
 
-.btn-card {
-    cursor: pointer;
+.label-visible {
+    opacity: 0 !important;
+    pointer-events: none;
+    /* Zorg ervoor dat het element niet meer interacties ontvangt wanneer het onzichtbaar is */
 }
+
+
 
 .fadeInRight {
     -webkit-animation-name: fadeInRight;

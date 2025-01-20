@@ -62,7 +62,7 @@ btnCard.addEventListener("click", function() {
         // Verberg de pop-up na 5 seconden
         setTimeout(function() {
             popUp.classList.remove('show');
-        }, 5000);
+        }, 8000);
     } else {
         plusIcon.src = './assets/plus-icon.svg'; 
         cardIcon.src = './assets/card-icon.svg'; 
@@ -73,6 +73,15 @@ btnCard.addEventListener("click", function() {
 
     iconState = !iconState; 
 });
+
+
+let hetLabel = document.querySelector(".knop-add-card p"); // Selecteert het menu-element met het id 'menu'
+
+btnCard.addEventListener("click", toggleMenu); // Als je het menu openklikt dan roept hij 'toggleMenu' aan
+
+function toggleMenu() { // Voegt of verwijdert de class 'open' van het menu-element 'hetMenu'
+    hetLabel.classList.toggle("label-visible"); // Dit zorgt ervoor dat het menu zichtbaar wordt of verbergt bij elke klik
+}
 
 
 // Zorgt ervoor dat een knop met een link: '#' niet omhoog scrollt
