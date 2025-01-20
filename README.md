@@ -1,5 +1,5 @@
 # Platform Weird Cool Stuff
-Tijdens sprint 5 heb ik me verdiept in interacties met JavaScript. Alle leerstof van afgelopen sprints worden toegepast in dit project. Daarbij kijk ik naar een semantieke HTML-opbouw, styleguids & stylesheets, mobile-first (media queries), Interacties i.c.m javascript en code conventies. In dit project heb ik van mijn opdrachtgever Lab Digital de opdracht gekregen om een goed doordacht mobile-first website te bouwen.
+Tijdens sprint 5 heb ik me verdiept in interacties met JavaScript. Alle leerstof van afgelopen sprints worden toegepast in dit project. Daarbij kijk ik naar een semantieke HTML-opbouw, styleguids & stylesheets, mobile-first (media queries), interacties i.c.m javascript, toegankelijkheid (voor screenreaders) en code conventies. In dit project heb ik van mijn opdrachtgever Lab Digital de opdracht gekregen om een goed doordacht mobile-first website te bouwen.
 
 Linkje naar de pagina: https://ambersr.github.io/the-startup-responsive-interactive-website/
 
