@@ -1,4 +1,4 @@
-# Platform Weird Cool Stuff
+![Schermopname 2025-01-20 om 19 16 36](https://github.com/user-attachments/assets/4c789a67-3db8-4d98-b329-70808c249a77)# Platform Weird Cool Stuff
 Tijdens sprint 5 heb ik me verdiept in interacties met JavaScript. Alle leerstof van afgelopen sprints worden toegepast in dit project. Daarbij kijk ik naar een semantieke HTML-opbouw, styleguids & stylesheets, mobile-first (media queries), interacties i.c.m javascript, toegankelijkheid (voor screenreaders) en code conventies. In dit project heb ik van mijn opdrachtgever Lab Digital de opdracht gekregen om een goed doordacht mobile-first website te bouwen. Het bedrijf waarvoor de website bouwen is een fictief bedrijf: Cool Weird Stuff. Dit bedrijf verkoopt allerlei unieke en gekke producten.
 
 Linkje naar de pagina: https://ambersr.github.io/the-startup-responsive-interactive-website/
@@ -18,7 +18,13 @@ De opdrachtgever heeft de volgende vraag aan mij opgesteld: ontwikkel een mobile
 
 ## Beschrijving
 ### Het ontwerp
-Er is een desktop design aangeleverd door de opdrachtgever. Hij heeft me de opdracht gegeven om deze op mobiel verder uit te werken. De grootste uitdaging was het navigatie menu, deze is op desktop vrij log/groot om te zien, aan mij de uitdaging om deze op mobiel zo goed mogelijk naar voren te laten komen. Alle contentblokken zijn op mobiel zo gepositioneerd dat deze voor  de gebruiker makkelijk leesbaar en bruikbaar is.
+Er is een desktop design aangeleverd door de opdrachtgever. Hij heeft me de opdracht gegeven om deze op mobiel verder uit te werken. Voordat ik met het ontwerpen van de mobiele versie aan de slag ben gegaan heb ik de huisstijl geïnventariseerd (zie onderstaande afbeelding). De grootste uitdaging was het navigatie menu, deze is op desktop vrij log/groot om te zien, aan mij de uitdaging om deze op mobiel zo goed mogelijk naar voren te laten komen. Alle contentblokken zijn op mobiel zo gepositioneerd dat deze voor  de gebruiker makkelijk leesbaar en bruikbaar is.
+
+Styleguide:
+
+<img width="794" alt="image" src="https://github.com/user-attachments/assets/fa8182ef-588a-41a3-8494-935edcefc2d2" />
+
+Responsive ontwerp:
 
 <img width="283" alt="image" src="https://github.com/user-attachments/assets/df5a92a2-c670-4d30-a8fc-78a490e55871" />
 
@@ -28,17 +34,17 @@ In de afgelopen 3 weken heb ik me gefocust op het ontwikkelen van de home pagina
 Linkje naar de pagina: https://ambersr.github.io/the-startup-responsive-interactive-website/
 
 ### Belangrijke features:
-- Interactief element (carousel)
+- Interactief element (Toevoegen aan winkel wagen)
 
-De partner pagina bevat een carousel. Op deze carousel kunnen gebruikers de meningen van partners van Bieb in Bloei bekijken. De carousel is volledig toegankelijk en bruikbaar voor diverse devices.
+Zodra je een product toevoegd aan je winkelwagen wordt een animatie in gang gezet. Als je op de knop klikt krijg je een pop up met 'Toegevoegd aan winkelwagen' en daarnaast wordt het aantal in het winkelwagen aangepast. Voor toegankelijkheid zijn er een aantal extra labels toegevoegd zoals 'toevoegen aan winkelwagen'.
 
-<img width="600" alt="image" src="https://github.com/user-attachments/assets/87ea690e-854c-403e-b0e5-b592661e7675">
+<img width="300" alt="image" src="https://github.com/user-attachments/assets/cac6be8d-0570-42a2-94ec-2deb9a0f2335" />
 
-- Formulieren aangepast
+- Responsive navigatie menu
 
-De teksten in de velden van de formulieren zijn aangepast naar toegankelijke labels.
+Het navigatie menu is op mobiel responsive gemaakt. Daarbij is gekeken naar elementen die prioriteit hebben en naar de opbouw van het dropdown menu.
 
-<img width="600" alt="image" src="https://github.com/user-attachments/assets/c42df2a1-a43a-4e0f-82fc-a49ef14da7c9" />
+<img width="300" alt="image" src="https://github.com/user-attachments/assets/81080140-59a1-4496-a119-bd12037751de" />
 
 ## Kenmerken
 ### Toegankelijkheid HTML
@@ -48,7 +54,7 @@ De HTML bevat code voor een skiplink. Op deze manier kunnen screenreader gebruik
 De styling wordt ingeladen aan de hand van een stylesheet waarin het huisstijl vast staat. Daarnaast wordt er een aparte CSS bestand gebruikt om de overige styling van de pagina's aan te passen.
 
 ### Belangrijke aspecten Javascript
-De Javascript wordt gebruikt om de animatie van het openklappen en dichtklappen van het hamburger menu te functioneren. Daarnaast wordt dit ook gebruik voor de functionaliteit van de carousel met reviews.
+De Javascript wordt gebruikt om de animatie van het openklappen en dichtklappen van het hamburger menu te functioneren. Daarnaast wordt dit ook gebruik voor de functionaliteit van het toevoegen van een product aan winkelwagen.
 
 ## Kenmerken
 ### Ademruimte en inspringen
