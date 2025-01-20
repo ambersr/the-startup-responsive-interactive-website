@@ -1118,12 +1118,12 @@ header .right {
 .blogartikel {
     display: flex;
     flex-direction: column;
-}
 
-.blogartikel .banner {
-    width: 100%;
-    height: 350px;
-    object-fit: cover;
+    .banner {
+        width: 100%;
+        height: 350px;
+        object-fit: cover;
+    }
 }
 
 .blogartikel .btm {
