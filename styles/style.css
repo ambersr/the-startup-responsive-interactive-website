@@ -148,6 +148,11 @@ header .right {
     }
 }
 
+.hamburger-btn img {
+    width: 20px;
+    height: 20px;
+}
+
 .hamburger-btn span {
     display: none;
 
