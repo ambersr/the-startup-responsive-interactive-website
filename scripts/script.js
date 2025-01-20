@@ -77,9 +77,9 @@ btnCard.addEventListener("click", function() {
 
 let hetLabel = document.querySelector(".knop-add-card p"); // Selecteert het menu-element met het id 'menu'
 
-btnCard.addEventListener("click", toggleMenu); // Als je het menu openklikt dan roept hij 'toggleMenu' aan
+btnCard.addEventListener("click", labelAnimatie); // Als je het menu openklikt dan roept hij 'toggleMenu' aan
 
-function toggleMenu() { // Voegt of verwijdert de class 'open' van het menu-element 'hetMenu'
+function labelAnimatie() { // Voegt of verwijdert de class 'open' van het menu-element 'hetMenu'
     hetLabel.classList.toggle("label-visible"); // Dit zorgt ervoor dat het menu zichtbaar wordt of verbergt bij elke klik
 }
 
