@@ -8,6 +8,30 @@ body {
     flex-direction: column;
 }
 
+/* ------------------------------- Skiplink ----------------------------- */
+
+/* Skiplink styling */
+.skiplink {
+    position: absolute;
+    left: -300px;
+    top: 0;
+    z-index: 100;
+    padding: 1em;
+    background-color: var(--primary-highlight-color);
+    color: var(--primary-text-color);
+    font-weight: 500;
+}
+
+.skiplink:focus {
+    left: 1em;
+    box-shadow: 0 0 0 3px var(--primary-highlight-color);
+}
+
+.skiplink:hover {
+     background-color: var(--secondary-background-color);
+     color: var(--secondary-text-color);
+}
+
 
 /* -------------------------------- Header ----------------------------- */
 
