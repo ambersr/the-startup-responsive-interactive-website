@@ -58,16 +58,24 @@ De Javascript wordt gebruikt om de animatie van het openklappen en dichtklappen 
 
 ## Kenmerken
 ### Ademruimte en inspringen
-Hier komt een stuk tekst
+De code bevat ademruimte en sprint in bij nieuwe elementen.
+
+https://github.com/ambersr/the-startup-responsive-interactive-website/blob/c76f53d6c2a95b815a687fd1edae5e87d748a28c/index.html#L463-L486
 
 ### Volgorde en nesten van CSS selectors
-Hier komt een stuk tekst
+De volgorde van de code is aangehouden aan de hand de pagina opbouw en de CSS selectors zijn genest.
+
+https://github.com/ambersr/the-startup-responsive-interactive-website/blob/13c38ce4bfe7a47ea06d41c98845bf681b960112/styles/style.css#L1118-L1127
 
 ### Nesten van media queries
-Hier komt een stuk tekst
+De media queries zijn genest in het element zelf.
+
+https://github.com/ambersr/the-startup-responsive-interactive-website/blob/c76f53d6c2a95b815a687fd1edae5e87d748a28c/styles/style.css#L36-L48
 
 ### Naamgeving
-Hier komt een stuk tekst
+De naamgeving van classes/variabelen hebben een logische/bijpassende naam.
+
+https://github.com/ambersr/the-startup-responsive-interactive-website/blob/13c38ce4bfe7a47ea06d41c98845bf681b960112/styles/stylesheet.css#L9-L20
 
 ## Bronnen
 - Huisstijl (kleuren en fonts uit de website gehaald) Linkje: https://bieb-in-bloei.vercel.app/
