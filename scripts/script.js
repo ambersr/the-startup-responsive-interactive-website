@@ -34,60 +34,63 @@ document.querySelector('#next').addEventListener('click', () => {   // selecteer
 });
 
 
-// Product toevoegen aan winkelwagen
+// Toevoegen product aan winkelwagen
 
-let plusIcon = document.querySelector(".plus-icon"); 
-let shopIcon = document.querySelector(".shop-icon");
-let cardIcon = document.querySelector(".card-icon");
-let btnCard = document.querySelector(".btn-card");
+let btnCards = document.querySelectorAll(".btn-card");
 let popUp = document.querySelector(".pop-up");
-let iconState = true;
 
-btnCard.addEventListener("click", function() {
-    if (iconState) {
-        plusIcon.src = './assets/check-groen.svg'; 
-        cardIcon.src = './assets/card-icon-15.svg'; 
-        shopIcon.src = './assets/icon-shopping-card-white.svg';
-        popUp.classList.add('show'); 
-        btnCard.classList.add('first-icon-active'); 
-        
-        // Voeg de animatie toe voor de card-icon
-        cardIcon.classList.add('icon-switch-animation');
-        
-        // Verwijder de animatieklasse na 0.5s (de duur van de animatie)
-        setTimeout(function() {
-            cardIcon.classList.remove('icon-switch-animation');
-        }, 500); // Verwijder de animatie na 10000ms
+btnCards.forEach(btnCard => {
+    let productElement = btnCard.closest(".product"); // Selecteer het bovenliggende productelement
+    let plusIcon = productElement.querySelector(".plus-icon"); // Zoek de plus-icon binnen dit product
+    let shopIcon = productElement.querySelector(".shop-icon"); // Zoek de shop-icon binnen dit product
+    let hetLabel = productElement.querySelector(".knop-add-card p"); // Selecteer het juiste label binnen dit product
+    let cardIcon = document.querySelector(".card-icon"); // Universele card-icon
+    let iconState = true; // Zorg ervoor dat elke knop zijn eigen status heeft
 
-        // Verberg de pop-up na 5 seconden
-        setTimeout(function() {
-            popUp.classList.remove('show');
-        }, 8000);
-    } else {
-        plusIcon.src = './assets/plus-icon.svg'; 
-        cardIcon.src = './assets/card-icon.svg'; 
-        shopIcon.src = './assets/add-to-card-icon.svg';
-        popUp.classList.remove('show'); 
-        btnCard.classList.remove('first-icon-active'); 
-    }
+    // Event listener voor elke knop
+    btnCard.addEventListener("click", function() {
+        if (iconState) {
+            // Update de iconen en toon de pop-up bij eerste klik
+            plusIcon.src = './assets/check-groen.svg'; 
+            cardIcon.src = './assets/card-icon-15.svg'; 
+            shopIcon.src = './assets/icon-shopping-card-white.svg';
+            popUp.classList.add('show'); 
+            btnCard.classList.add('first-icon-active'); 
 
-    iconState = !iconState; 
+            // Voeg de animatie toe voor de card-icon
+            cardIcon.classList.add('icon-switch-animation');
+
+            // Verwijder de animatieklasse na 0.5s (de duur van de animatie)
+            setTimeout(function() {
+                cardIcon.classList.remove('icon-switch-animation');
+            }, 500);
+
+            // Verberg de pop-up na 5 seconden
+            setTimeout(function() {
+                popUp.classList.remove('show');
+            }, 8000);
+        } else {
+            // Herstel de iconen en verberg de pop-up bij tweede klik
+            plusIcon.src = './assets/plus-icon.svg'; 
+            cardIcon.src = './assets/card-icon.svg'; 
+            shopIcon.src = './assets/add-to-card-icon.svg';
+            popUp.classList.remove('show'); 
+            btnCard.classList.remove('first-icon-active'); 
+        }
+
+        iconState = !iconState; // Zorgt ervoor dat je oneindig kan klikken
+    });
+
+    // Label 'toevoegen aan winkelwagen'
+    btnCard.addEventListener("click", function() {
+        hetLabel.classList.toggle("label-visible"); // zorgt ervoor dat het label niet zichtbaar is bij klikken
+    });
 });
 
-
-let hetLabel = document.querySelector(".knop-add-card p"); // Selecteert het menu-element met het id 'menu'
-
-btnCard.addEventListener("click", labelAnimatie); // Als je het menu openklikt dan roept hij 'toggleMenu' aan
-
-function labelAnimatie() { // Voegt of verwijdert de class 'open' van het menu-element 'hetMenu'
-    hetLabel.classList.toggle("label-visible"); // Dit zorgt ervoor dat het menu zichtbaar wordt of verbergt bij elke klik
-}
-
-
-// Zorgt ervoor dat een knop met een link: '#' niet omhoog scrollt
+// Zorgt ervoor dat een knop met een link '#' niet omhoog scrollt
 document.querySelectorAll('a[href="#"]').forEach(link => {
   link.addEventListener('click', function(event) {
-    event.preventDefault(); // Voorkomt het springen naar de bovenkant
+    event.preventDefault(); // Voorkomt het springen naar de bovenkant van het scherm
   });
 });
 
