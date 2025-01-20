@@ -13,7 +13,7 @@ De opdrachtgever heeft de volgende vraag aan mij opgesteld: ontwikkel een mobile
 
   * [Beschrijving](#beschrijving)
   * [Kenmerken](#kenmerken)
-  * [Kenmerken](#Code-conventies)
+  * [Code conventies](#Code-conventies)
   * [Bronnen](#bronnen)
 
 ## Beschrijving
@@ -56,7 +56,7 @@ De styling wordt ingeladen aan de hand van een stylesheet waarin het huisstijl v
 ### Belangrijke aspecten Javascript
 De Javascript wordt gebruikt om de animatie van het openklappen en dichtklappen van het hamburger menu te functioneren. Daarnaast wordt dit ook gebruik voor de functionaliteit van het toevoegen van een product aan winkelwagen.
 
-## Kenmerken
+## Code conventies
 ### Ademruimte en inspringen
 De code bevat ademruimte en sprint in bij nieuwe elementen.
 
