@@ -10,7 +10,6 @@ body {
 
 /* ------------------------------- Skiplink ----------------------------- */
 
-/* Skiplink styling */
 .skiplink {
     position: absolute;
     left: -300px;
@@ -28,10 +27,9 @@ body {
 }
 
 .skiplink:hover {
-     background-color: var(--secondary-background-color);
-     color: var(--secondary-text-color);
+    background-color: var(--secondary-background-color);
+    color: var(--secondary-text-color);
 }
-
 
 /* -------------------------------- Header ----------------------------- */
 
@@ -44,9 +42,9 @@ header {
     border-radius: 1em 0em 1em 1em;
     z-index: 30;
 
-      @media screen and (min-width: 960px) {
-          width: 85%;
-      }
+    @media screen and (min-width: 960px) {
+        width: 85%;
+    }
 }
 
 /* Logo in nav */
@@ -65,9 +63,9 @@ header .logo {
     width: 4em;
     align-self: center;
 
-        @media screen and (min-width: 960px) {
-                width: 7em;
-        }
+    @media screen and (min-width: 960px) {
+        width: 7em;
+    }
 }
 
 header .right {
@@ -133,25 +131,26 @@ header .right {
 
 .btm-nav .links {
 
-      @media screen and (min-width: 960px) {
-    width: 12em;
-    justify-content: end;
+    @media screen and (min-width: 960px) {
+        width: 12em;
+        justify-content: end;
     }
 }
 
 .user p {
     display: none;
-@media screen and (min-width: 960px) {
-    display: flex;
-}
+
+    @media screen and (min-width: 960px) {
+        display: flex;
+    }
 }
 
 .user {
-              @media screen and (min-width: 960px) {
-                  display: flex;
-                  flex-direction: row;
-                  gap: 0.5em;
-              }
+    @media screen and (min-width: 960px) {
+        display: flex;
+        flex-direction: row;
+        gap: 0.5em;
+    }
 }
 
 /* Hamburger knop */
@@ -202,28 +201,28 @@ header .right {
     height: 0;
     overflow: hidden;
     transition: height 0.4s ease-in-out;
-     overflow-y: auto;
-     scrollbar-width: thin;
-     max-height: 40em;
-     border-radius: 0em 0em 1em 1em;
-     z-index: 1;
-     margin-top: -1em;
-    
+    overflow-y: auto;
+    scrollbar-width: thin;
+    max-height: 40em;
+    border-radius: 0em 0em 1em 1em;
+    z-index: 1;
+    margin-top: -1em;
 
-     @media screen and (min-width: 960px) {
+
+    @media screen and (min-width: 960px) {
         overflow-y: unset;
         width: 15em;
         left: 11em;
         margin-top: 0em;
-     }
+    }
 }
 
 .open {
-        height: 100vh;
+    height: 100vh;
 
-     @media screen and (min-width: 960px) {
-          height: 23em;
-     }
+    @media screen and (min-width: 960px) {
+        height: 23em;
+    }
 }
 
 .cagetory-items form {
@@ -231,28 +230,29 @@ header .right {
     padding: 0;
     width: 100% !important;
 
-     @media screen and (min-width: 960px) {
-         display: none;
-     }
+    @media screen and (min-width: 960px) {
+        display: none;
+    }
 }
 
 .cagetory-items p {
     margin-bottom: 1em;
-     @media screen and (min-width: 960px) {
-         display: none;
-     }
+
+    @media screen and (min-width: 960px) {
+        display: none;
+    }
 }
 
 .btm-nav form input {
     width: 100%;
-      background-image: url('../assets/search-icon.svg');
-      background-position: 97% 12px;
-      background-repeat: no-repeat;
-      margin: 3em 0em 2em 0em;
+    background-image: url('../assets/search-icon.svg');
+    background-position: 97% 12px;
+    background-repeat: no-repeat;
+    margin: 3em 0em 2em 0em;
 
-      @media screen and (min-width: 960px) {
-          margin: 0em;
-      }
+    @media screen and (min-width: 960px) {
+        margin: 0em;
+    }
 }
 
 .cagetory-items ul {
@@ -261,7 +261,7 @@ header .right {
 }
 
 .cagetory-items ul li a {
-     list-style-type: none;
+    list-style-type: none;
 }
 
 .cagetory-items ul li {
@@ -269,14 +269,13 @@ header .right {
 
 }
 
-
 .cagetory-items .divider {
     padding: 0.03em;
     background-color: rgb(217, 217, 217);
 
-@media screen and (min-width: 960px) {
-    display: none;
-}
+    @media screen and (min-width: 960px) {
+        display: none;
+    }
 }
 
 /* Overige */
@@ -285,9 +284,9 @@ header .right {
     flex-direction: row;
     gap: 1em;
 
-        @media screen and (min-width: 960px) {
-            display: none;
-        }
+    @media screen and (min-width: 960px) {
+        display: none;
+    }
 }
 
 .cagetory-items .sterren {
@@ -314,9 +313,9 @@ header .right {
 }
 
 .cagetory-items .usp-besteld {
-      @media screen and (min-width: 960px) {
-          display: none;
-      }
+    @media screen and (min-width: 960px) {
+        display: none;
+    }
 }
 
 .btm-nav .links {
@@ -334,8 +333,8 @@ header .right {
     transition: 0.2s ease-in-out;
 }
 
-
 /* ---------------------------- Sectie 1 banner ------------------------------ */
+
 .banner-home {
     display: flex;
     flex-direction: column;
@@ -361,7 +360,7 @@ header .right {
     align-items: center;
 
     @media screen and (min-width: 1100px) {
-         width: 30%;
+        width: 30%;
     }
 }
 
@@ -382,6 +381,7 @@ header .right {
 }
 
 /* ---------------------------- USP's -------------------------------- */
+
 .usp-orders {
     list-style-type: none;
     display: flex;
@@ -390,20 +390,20 @@ header .right {
     align-items: center;
     justify-content: center;
     padding: 1em 0em 1em 0em;
- 
-         @media screen and (min-width: 820px) {
-            flex-direction: row;
-             padding: 1em 3em 1em 3em;
-         }
 
-         @media screen and (min-width: 1120px) {
-            gap: 2em;
-             padding: 1em 7em 1em 7em;
-         }
+    @media screen and (min-width: 820px) {
+        flex-direction: row;
+        padding: 1em 3em 1em 3em;
+    }
 
-         @media screen and (min-width: 1600px) {
-             padding: 1em 4em 1em 4em;
-         }
+    @media screen and (min-width: 1120px) {
+        gap: 2em;
+        padding: 1em 7em 1em 7em;
+    }
+
+    @media screen and (min-width: 1600px) {
+        padding: 1em 4em 1em 4em;
+    }
 }
 
 .usp-orders li {
@@ -417,22 +417,22 @@ header .right {
 }
 
 .divider-usp {
-        padding: 0.01em;
-        background-color: rgb(217, 217, 217);
-       
-        margin: 0em 1em 3.5em 1em;
+    padding: 0.01em;
+    background-color: rgb(217, 217, 217);
 
-         @media screen and (min-width: 820px) {
-             margin: 0em 3em 4.5em 3em;
-         }
+    margin: 0em 1em 3.5em 1em;
 
-         @media screen and (min-width: 1120px) {
-             margin: 0em 7em 5em 7em;
-         }
+    @media screen and (min-width: 820px) {
+        margin: 0em 3em 4.5em 3em;
+    }
 
-         @media screen and (min-width: 1600px) {
-             margin: 0em 4em 4em 4em;
-         }
+    @media screen and (min-width: 1120px) {
+        margin: 0em 7em 5em 7em;
+    }
+
+    @media screen and (min-width: 1600px) {
+        margin: 0em 4em 4em 4em;
+    }
 }
 
 /* ---------------------------- Sectie 3 categorieën lijst ----------------------------*/
@@ -448,7 +448,7 @@ header .right {
 
     @media screen and (min-width: 1100px) {
         flex-direction: row;
-         gap: 2em;
+        gap: 2em;
         margin-bottom: -2em;
     }
 }
@@ -495,9 +495,9 @@ header .right {
     align-self: flex-end;
     translate: 15px -90px;
 
-     @media screen and (min-width: 900px) {
-          translate: 20px -110px;
-     }
+    @media screen and (min-width: 900px) {
+        translate: 20px -110px;
+    }
 }
 
 #volgende:hover {
@@ -511,19 +511,19 @@ header .right {
 .product-sectie {
     display: flex;
     flex-direction: column;
-       overflow: hidden;
-       margin-bottom: -2em;
+    overflow: hidden;
+    margin-bottom: -2em;
 }
 
 .producten-banner {
     display: flex;
     flex-direction: column;
 
-      @media screen and (min-width: 1100px) {
-          flex-direction: row;
-          justify-content: space-between;
-          align-items: center;
-      }
+    @media screen and (min-width: 1100px) {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
 }
 
 .producten-banner a {
@@ -533,8 +533,8 @@ header .right {
 }
 
 .producten-banner a:before {
-     content: url(../assets/icon-right-balck.svg);
-     margin: 0px 2px 0px 0px;
+    content: url(../assets/icon-right-balck.svg);
+    margin: 0px 2px 0px 0px;
 }
 
 .carousel-wrapper {
@@ -542,12 +542,12 @@ header .right {
 }
 
 .producten {
-     display: flex;
-     flex-direction: row;
-     gap: 1.5em;
-     transition: transform 0.5s ease-in-out;
-     padding: 0;
-       scroll-behavior: smooth;
+    display: flex;
+    flex-direction: row;
+    gap: 1.5em;
+    transition: transform 0.5s ease-in-out;
+    padding: 0;
+    scroll-behavior: smooth;
 }
 
 /* Product */
@@ -569,68 +569,7 @@ header .right {
     width: 100%;
 }
 
-/* Wishlist icon */
-
-.favorite-icon {
-    translate: 310px -340px;
-    cursor: pointer;
-    width: 20px;
-    transition: .2s ease-in-out;
-}
-
-
-#tweede {
-        translate: 286px -340px;
-}
-
-@keyframes flyAnimation {
-   30% {
-       transform: scale(1.4);
-   }
-
-   50% {
-       transform: scale(.8);
-   }
-
-   100% {
-       transform: scale(1);
-   }
-}
-
-.fly {
-    animation: flyAnimation 1s forwards;
-    z-index: 30;
-}
-
-
-
-
-
-
-.knop-add-card {
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-}
-
-.knop-add-card p {
-    width: 130px;
-    line-height: 20px;
-    opacity: 1;
-    transition: opacity 0.5s ease;
-    /* Zorg ervoor dat alleen opacity wordt geanimeerd */
-    pointer-events: auto;
-    /* Zorg ervoor dat het element interacties kan ontvangen */
-}
-
-.label-visible {
-    opacity: 0 !important;
-    pointer-events: none;
-    /* Zorg ervoor dat het element niet meer interacties ontvangt wanneer het onzichtbaar is */
-}
-
-
-
+/* Animatie aantal in winkelwagen */
 .fadeInRight {
     -webkit-animation-name: fadeInRight;
     animation-name: fadeInRight;
@@ -651,9 +590,9 @@ header .right {
         opacity: 0;
     }
 
-      80% {
-          opacity: 0;
-      }
+    80% {
+        opacity: 0;
+    }
 
     100% {
         opacity: 1;
@@ -676,7 +615,6 @@ header .right {
     }
 }
 
-
 .favorite-icon:hover {
     transform: scale(1.1);
     transition: .2s ease-in-out;
@@ -687,7 +625,6 @@ header .right {
     stroke: white;
 }
 
-
 .btm .info {
     display: flex;
     flex-direction: row;
@@ -695,9 +632,28 @@ header .right {
     align-items: center;
 }
 
+/* Toevoegen product aan winkelwagen */
+.knop-add-card {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
 
+.knop-add-card p {
+    width: 130px;
+    line-height: 20px;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+    /* Zorg ervoor dat alleen opacity wordt geanimeerd */
+    pointer-events: auto;
+    /* Zorg ervoor dat het element interacties kan ontvangen */
+}
 
-
+.label-visible {
+    opacity: 0 !important;
+    pointer-events: none;
+    /* Zorg ervoor dat het element niet meer interacties ontvangt wanneer het onzichtbaar is */
+}
 
 .btn-card {
     padding: 0.4em 0.8em 0.1em 0.8em;
@@ -733,7 +689,6 @@ header .right {
     transition: all 0.3s ease;
 }
 
-
 /* Popup */
 .pop-up {
     display: none;
@@ -764,92 +719,92 @@ header .right {
     /* Animatie toevoegen */
 }
 
-  .bounceInUp {
-      -webkit-animation-name: bounceInUp;
-      animation-name: bounceInUp;
-      -webkit-animation-duration: 1s;
-      animation-duration: 1s;
-      -webkit-animation-fill-mode: both;
-      animation-fill-mode: both;
-  }
+.bounceInUp {
+    -webkit-animation-name: bounceInUp;
+    animation-name: bounceInUp;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
 
-  @-webkit-keyframes bounceInUp {
+@-webkit-keyframes bounceInUp {
 
-      0%,
-      60%,
-      75%,
-      90%,
-      100% {
-          -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
-          transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
-      }
+    0%,
+    60%,
+    75%,
+    90%,
+    100% {
+        -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+        transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    }
 
-      0% {
-          opacity: 0;
-          -webkit-transform: translate3d(0, 3000px, 0);
-          transform: translate3d(0, 3000px, 0);
-      }
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 3000px, 0);
+        transform: translate3d(0, 3000px, 0);
+    }
 
-      60% {
-          opacity: 1;
-          -webkit-transform: translate3d(0, -20px, 0);
-          transform: translate3d(0, -20px, 0);
-      }
+    60% {
+        opacity: 1;
+        -webkit-transform: translate3d(0, -20px, 0);
+        transform: translate3d(0, -20px, 0);
+    }
 
-      75% {
-          -webkit-transform: translate3d(0, 10px, 0);
-          transform: translate3d(0, 10px, 0);
-      }
+    75% {
+        -webkit-transform: translate3d(0, 10px, 0);
+        transform: translate3d(0, 10px, 0);
+    }
 
-      90% {
-          -webkit-transform: translate3d(0, -5px, 0);
-          transform: translate3d(0, -5px, 0);
-      }
+    90% {
+        -webkit-transform: translate3d(0, -5px, 0);
+        transform: translate3d(0, -5px, 0);
+    }
 
-      100% {
-          -webkit-transform: translate3d(0, 0, 0);
-          transform: translate3d(0, 0, 0);
-      }
-  }
+    100% {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
 
-  @keyframes bounceInUp {
+@keyframes bounceInUp {
 
-      0%,
-      60%,
-      75%,
-      90%,
-      100% {
-          -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
-          transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
-      }
+    0%,
+    60%,
+    75%,
+    90%,
+    100% {
+        -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+        transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    }
 
-      0% {
-          opacity: 0;
-          -webkit-transform: translate3d(0, 3000px, 0);
-          transform: translate3d(0, 3000px, 0);
-      }
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 3000px, 0);
+        transform: translate3d(0, 3000px, 0);
+    }
 
-      60% {
-          opacity: 1;
-          -webkit-transform: translate3d(0, -20px, 0);
-          transform: translate3d(0, -20px, 0);
-      }
+    60% {
+        opacity: 1;
+        -webkit-transform: translate3d(0, -20px, 0);
+        transform: translate3d(0, -20px, 0);
+    }
 
-      75% {
-          -webkit-transform: translate3d(0, 10px, 0);
-          transform: translate3d(0, 10px, 0);
-      }
+    75% {
+        -webkit-transform: translate3d(0, 10px, 0);
+        transform: translate3d(0, 10px, 0);
+    }
 
-      90% {
-          -webkit-transform: translate3d(0, -5px, 0);
-          transform: translate3d(0, -5px, 0);
-      }
+    90% {
+        -webkit-transform: translate3d(0, -5px, 0);
+        transform: translate3d(0, -5px, 0);
+    }
 
-      100% {
-          -webkit-transform: translate3d(0, 0, 0);
-          transform: translate3d(0, 0, 0);
-      }
-  }
+    100% {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
 
 /* Animatieklasse voor card-icon */
 .icon-switch-animation {
@@ -944,8 +899,6 @@ header .right {
 }
 
 ×
-
-
 /* Carousel */
 
 /* Animatie sliden */
@@ -961,12 +914,10 @@ header .right {
 .producten.slide-1 {
     transform: translateX(-350px);
 }
+
 .producten.slide-2 {
     transform: translateX(-700px);
 }
-
-
-
 
 /* Button carousel */
 #next {
@@ -1002,9 +953,9 @@ header .right {
     height: 45vh;
     object-fit: cover;
 
-        @media screen and (min-width: 1100px) {
-             height: 70vh;
-        }
+    @media screen and (min-width: 1100px) {
+        height: 70vh;
+    }
 }
 
 /* Cards */
@@ -1012,7 +963,7 @@ header .right {
 .cards {
     list-style-type: none;
     padding: 0;
-     width: 93.5%;
+    width: 93.5%;
     margin-top: -10em;
     display: flex;
     flex-direction: column;
@@ -1031,10 +982,10 @@ header .right {
     justify-content: flex-end;
     border-radius: var(--small-rounded);
 
-     @media screen and (min-width: 1100px) {
-         flex-direction: row;
-             gap: 2em;
-     }
+    @media screen and (min-width: 1100px) {
+        flex-direction: row;
+        gap: 2em;
+    }
 }
 
 .cards h2 {
@@ -1042,7 +993,8 @@ header .right {
 }
 
 .cards li img {
-        border-radius: var(--small-rounded);
+    border-radius: var(--small-rounded);
+
     @media screen and (min-width: 1100px) {
         height: 100%;
         background-size: cover;
@@ -1050,13 +1002,14 @@ header .right {
 }
 
 .cards li .mobiel {
-            width: 95%;
+    width: 95%;
+
     @media screen and (min-width: 1100px) {
         display: none;
     }
 }
 
-.cards li .desktop{
+.cards li .desktop {
     display: none;
 
     @media screen and (min-width: 1100px) {
@@ -1073,10 +1026,10 @@ header .right {
     gap: 1em;
     padding: 2em 2em 1em 2em;
 
-      @media screen and (min-width: 1100px) {
-         padding: 7em 2em 2em 2em;
-      }
-    
+    @media screen and (min-width: 1100px) {
+        padding: 7em 2em 2em 2em;
+    }
+
 }
 
 .card-left .right {
@@ -1094,9 +1047,9 @@ header .right {
     gap: 1em;
     padding: 2em 2em 0em 2em;
 
-     @media screen and (min-width: 1100px) {
-         padding: 7em 2em 2em 2em;
-     }
+    @media screen and (min-width: 1100px) {
+        padding: 7em 2em 2em 2em;
+    }
 }
 
 .card-right .right {
@@ -1109,9 +1062,9 @@ header .right {
 .card-right {
     gap: 0 !important;
 
-     @media screen and (min-width: 920px) {
-         gap: 2em !important;
-     }
+    @media screen and (min-width: 920px) {
+        gap: 2em !important;
+    }
 }
 
 /* ----------------------------- Sectie 6 blog artikelen --------------------------------- */
@@ -1122,7 +1075,7 @@ header .right {
     gap: 1em;
 
     @media screen and (min-width: 920px) {
-         gap: 0em;
+        gap: 0em;
     }
 }
 
@@ -1144,8 +1097,8 @@ header .right {
 }
 
 .nieuws .info a:before {
-        content: url(../assets/icon-right-balck.svg);
-        margin: 0px 2px 0px 0px;
+    content: url(../assets/icon-right-balck.svg);
+    margin: 0px 2px 0px 0px;
 }
 
 .blogartikelen {
@@ -1155,9 +1108,9 @@ header .right {
     flex-direction: column;
     gap: 1em;
 
-     @media screen and (min-width: 920px) {
+    @media screen and (min-width: 920px) {
         flex-direction: row;
-     }
+    }
 }
 
 /* Blogartikel */
@@ -1216,6 +1169,7 @@ header .right {
         padding: 0em 0em 0em 5em;
     }
 }
+
 .member .left .checklist {
     list-style-type: none;
     padding: 0em 0em 1em 0em;
@@ -1247,6 +1201,7 @@ header .right {
         padding: 0em 5em 0em 0em;
     }
 }
+
 .right .foto-1 {
     width: 85%;
     align-self: flex-end;
@@ -1282,7 +1237,7 @@ footer ul {
 }
 
 footer a {
-      text-decoration: none;
+    text-decoration: none;
 }
 
 footer h4 {
@@ -1335,7 +1290,7 @@ footer h4 {
 }
 
 /* Betaalmethodes */
-.betaalmethodes{
+.betaalmethodes {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -1357,8 +1312,8 @@ footer h4 {
     flex-direction: column;
 
     @media screen and (min-width: 920px) {
-            justify-content: center;
-            flex-direction: row;
-            gap: 2em;
-        }
+        justify-content: center;
+        flex-direction: row;
+        gap: 2em;
+    }
 }

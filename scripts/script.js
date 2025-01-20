@@ -1,3 +1,5 @@
+// ----------------------- Hamburger menu -------------------------
+
 const menuButton = document.querySelector("#menuButton"); // Selecteert de knop met het id 'menuButton'
 const hetMenu = document.querySelector("#menu"); // Selecteert het menu-element met het id 'menu'
 const hamburgerIcon = document.querySelector(".img-hamburger"); // Selecteert het hamburgericoon
@@ -17,8 +19,7 @@ function toggleMenu() { // Voegt of verwijdert de class 'open' van het menu-elem
     }
 }
 
-
-// Carousel producten
+// ----------------------- Carousel producten -------------------------
 
 let slidesContainer = document.querySelector('.producten'); // Container van de producten
 let slides = document.querySelectorAll('.product'); // Alle producten
@@ -40,8 +41,7 @@ document.querySelector('#next').addEventListener('click', () => {   // selecteer
   }
 });
 
-
-// Toevoegen product aan winkelwagen
+// ----------------------- Toevoegen aan winkelwagen -------------------------
 
 let btnCards = document.querySelectorAll(".btn-card");
 let popUp = document.querySelector(".pop-up");
