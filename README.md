@@ -23,24 +23,9 @@ Er is een desktop design aangeleverd door de opdrachtgever. Hij heeft me de opdr
 <img width="283" alt="image" src="https://github.com/user-attachments/assets/df5a92a2-c670-4d30-a8fc-78a490e55871" />
 
 ### Het ontwikkelde platform
-In de afgelopen sprints heb ik 3 pagina's ontwikkeld:
-- Geveltuin pagina
+In de afgelopen 3 weken heb ik me gefocust op het ontwikkelen van de home pagina van Weird Cool Stuff. Een belangrijk punt is het responsive krijgen van het navigatiemenu op mobiel. Deze heb ik zo ontwikkeld dat ook op mobiel de belangrijkste elementen tot zijn recht komtn. Daarnaast heb ik me voornamelijk ook gefocust op het bedenken van een coole interactie i.c.m javascript. Dit heb ik toegepast op de 'Toevoegen aan winkelwagen' knop bij de producten. Zodra je op de knop klikt wordt er een animatie afgespeeld.
 
-De Geveltuin pagina heeft een aantal kleine aanpassingen in de formulier velden en een aantal tekstuele aanpassingen zijn doorgevoerd
-
-Linkje naar de Geveltuin pagina: https://ambersr.github.io/fix-the-flow-interactive-website/index.html
-
-- Contact pagina
-
-Ook de contact pagina heeft een aantal kleine aanpassingen in de formulier velden en een aantal tekstuele aanpassingen zijn doorgevoerd
-
-Linkje naar de contact pagina: https://ambersr.github.io/fix-the-flow-interactive-website/partner.html
-
-- Partner pagina
-
-De Partnerpagina is een nieuw ontwikkelde toevoeging en bevat een interactieve JavaScript-functionaliteit: een carousel met reviews. Deze carousel is mobile-first ontworpen en toegankelijk gemaakt voor verschillende schermformaten. Daarnaast is de carousel eenvoudig te navigeren met de tabtoets, wat het gebruiksvriendelijk maakt voor mensen met screenreaders. Bovendien zijn er labels toegevoegd aan de carousel, zodat alle gebruikers duidelijk begrijpen hoe de interactie werkt.
-
-Linkje naar de Partner pagina: https://ambersr.github.io/fix-the-flow-interactive-website/partner.html
+Linkje naar de pagina: https://ambersr.github.io/the-startup-responsive-interactive-website/
 
 ### Belangrijke features:
 - Interactief element (carousel)
