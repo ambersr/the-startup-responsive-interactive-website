@@ -1,5 +1,5 @@
 # Platform Weird Cool Stuff
-Tijdens sprint 5 heb ik me verdiept in interacties met JavaScript. Alle leerstof van afgelopen sprints worden toegepast in dit project. Daarbij kijk ik naar een semantieke HTML-opbouw, styleguids & stylesheets, mobile-first (media queries), interacties i.c.m javascript, toegankelijkheid (voor screenreaders) en code conventies. In dit project heb ik van mijn opdrachtgever Lab Digital de opdracht gekregen om een goed doordacht mobile-first website te bouwen.
+Tijdens sprint 5 heb ik me verdiept in interacties met JavaScript. Alle leerstof van afgelopen sprints worden toegepast in dit project. Daarbij kijk ik naar een semantieke HTML-opbouw, styleguids & stylesheets, mobile-first (media queries), interacties i.c.m javascript, toegankelijkheid (voor screenreaders) en code conventies. In dit project heb ik van mijn opdrachtgever Lab Digital de opdracht gekregen om een goed doordacht mobile-first website te bouwen. Het bedrijf waarvoor de website bouwen is een fictief bedrijf: Cool Weird Stuff. Dit bedrijf verkoopt allerlei unieke en gekke producten.
 
 Linkje naar de pagina: https://ambersr.github.io/the-startup-responsive-interactive-website/
 
@@ -18,11 +18,9 @@ De opdrachtgever heeft de volgende vraag aan mij opgesteld: ontwikkel een mobile
 
 ## Beschrijving
 ### Het ontwerp
-Het ontwerp is grotendeels ongewijzigd gebleven, met uitzondering van een kleine aanpassing in het kleurgebruik. Zoals besproken tijdens de vorige sprintreview, waren de oranje knoppen niet voldoende toegankelijk. Om dit te verbeteren, heb ik de knoppen donkerder gemaakt, zodat ze nu voldoen aan de toegankelijkheidstests.
+Er is een desktop design aangeleverd door de opdrachtgever. Hij heeft me de opdracht gegeven om deze op mobiel verder uit te werken. De grootste uitdaging was het navigatie menu, deze is op desktop vrij log/groot om te zien, aan mij de uitdaging om deze op mobiel zo goed mogelijk naar voren te laten komen. Alle contentblokken zijn op mobiel zo gepositioneerd dat deze voor  de gebruiker makkelijk leesbaar en bruikbaar is.
 
-Daarnaast heb ik een nieuw ontwerp gemaakt voor de Partnerpagina. Deze pagina sluit qua stijl naadloos aan bij de andere pagina’s. Op de Partnerpagina heb ik verschillende contentblokken toegevoegd, waarmee gebruikers meer te weten kunnen komen over de samenwerkingen tussen Bieb in Bloei en haar partners.
-
-<img width="319" alt="image" src="https://github.com/user-attachments/assets/425b5eb7-702f-4ad6-b104-bae804b4b540" />
+<img width="283" alt="image" src="https://github.com/user-attachments/assets/df5a92a2-c670-4d30-a8fc-78a490e55871" />
 
 ### Het ontwikkelde platform
 In de afgelopen sprints heb ik 3 pagina's ontwikkeld:
