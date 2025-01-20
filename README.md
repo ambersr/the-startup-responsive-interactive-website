@@ -1,4 +1,4 @@
-![Schermopname 2025-01-20 om 19 16 36](https://github.com/user-attachments/assets/4c789a67-3db8-4d98-b329-70808c249a77)# Platform Weird Cool Stuff
+# Platform Weird Cool Stuff
 Tijdens sprint 5 heb ik me verdiept in interacties met JavaScript. Alle leerstof van afgelopen sprints worden toegepast in dit project. Daarbij kijk ik naar een semantieke HTML-opbouw, styleguids & stylesheets, mobile-first (media queries), interacties i.c.m javascript, toegankelijkheid (voor screenreaders) en code conventies. In dit project heb ik van mijn opdrachtgever Lab Digital de opdracht gekregen om een goed doordacht mobile-first website te bouwen. Het bedrijf waarvoor de website bouwen is een fictief bedrijf: Cool Weird Stuff. Dit bedrijf verkoopt allerlei unieke en gekke producten.
 
 Linkje naar de pagina: https://ambersr.github.io/the-startup-responsive-interactive-website/
