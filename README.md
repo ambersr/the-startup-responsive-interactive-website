@@ -13,7 +13,7 @@ De opdrachtgever heeft de volgende vraag aan mij opgesteld: ontwikkel een mobile
 
   * [Beschrijving](#beschrijving)
   * [Kenmerken](#kenmerken)
-  * [Kenmerken](#Code conventies)
+  * [Kenmerken](#Code-conventies)
   * [Bronnen](#bronnen)
 
 ## Beschrijving
