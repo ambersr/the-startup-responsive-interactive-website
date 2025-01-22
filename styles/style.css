@@ -318,9 +318,7 @@ header {
                 flex-direction: row;
                 align-content: center;
                 flex-wrap: wrap;
-            }
 
-            &.usp-besteld {
                 @media screen and (min-width: 960px) {
                     display: none;
                 }
