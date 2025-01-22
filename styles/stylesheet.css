@@ -369,7 +369,7 @@ a:hover {
 .width-top-btm {
     padding: 3.5em 1em 3.5em 1em;
 
-    @media screen and (min-width: 820px) {
+    @media screen and (min-width: 920px) {
         padding: 4.5em 3em 4.5em 3em;
     }
 
@@ -386,7 +386,7 @@ a:hover {
 .width-btm {
     padding: 0em 1em 3.5em 1em;
 
-    @media screen and (min-width: 820px) {
+    @media screen and (min-width: 920px) {
         padding: 0em 3em 4.5em 3em;
     }
 
@@ -403,7 +403,7 @@ a:hover {
 .width-top {
     padding: 3.5em 1em 0em 1em;
 
-    @media screen and (min-width: 820px) {
+    @media screen and (min-width: 920px) {
         padding: 4.5em 3em 0em 3em;
     }
 
