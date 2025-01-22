@@ -19,19 +19,22 @@ De opdrachtgever heeft de volgende vraag aan mij opgesteld: ontwikkel een mobile
 ## Beschrijving
 
 ### Responsive
-De doelstelling van dit project is het mobile-first werken. Hierbij staat mobiel schermgrootte centraal en wordt het ontwerp vanuit een mobiel ontwikkeld. De website bevat meerdere breakpoints: 820px, 1120px en 1600px. Deze breakpoints zijn toegepast met mediaqueries.
+Het doel van dit project is om te werken volgens het mobile-first principe. Dit houdt in dat het ontwerp wordt ontwikkeld met een mobiele schermgrootte als uitgangspunt. De website maakt gebruik van meerdere breakpoints, namelijk 820px en 1120px, die zijn geïmplementeerd met behulp van mediaqueries.
 
 Schermbreedte < 820px:
-<img width="300" alt="image" src="https://github.com/user-attachments/assets/369543b0-fc18-4462-8eb6-f4bb9f0d7ef5" />
+
+<img width="200" alt="image" src="https://github.com/user-attachments/assets/f54e5e5b-9d7b-4957-a7bd-9d56f401610c" />
 
 Schermbreedte > 820px:
-<img width="300" alt="image" src="https://github.com/user-attachments/assets/369543b0-fc18-4462-8eb6-f4bb9f0d7ef5" />
+
+<img width="400" alt="image" src="https://github.com/user-attachments/assets/0953e794-7cbc-4c1c-8e6b-e0f5cf085f16" />
 
 Schermbreedte > 1120px;
-<img width="300" alt="image" src="https://github.com/user-attachments/assets/7fec0855-a817-4b9e-9af9-8064437ffb5c" />
+
+<img width="500" alt="image" src="https://github.com/user-attachments/assets/5e2ebdad-dc43-4cd4-9fde-a01059a4142c" />
 
 ### Ontwerpkeuzes
-Er is een desktop design aangeleverd door de opdrachtgever. Hij heeft me de opdracht gegeven om deze op mobiel verder uit te werken. Voordat ik met het ontwerpen van de mobiele versie aan de slag ben gegaan heb ik de huisstijl geïnventariseerd (zie onderstaande afbeelding). De grootste uitdaging was het navigatie menu, deze is op desktop vrij log/groot om te zien, aan mij de uitdaging om deze op mobiel zo goed mogelijk naar voren te laten komen. Alle contentblokken zijn op mobiel zo gepositioneerd dat deze voor  de gebruiker makkelijk leesbaar en bruikbaar is.
+De opdrachtgever heeft een desktopdesign aangeleverd en mij gevraagd om dit verder uit te werken voor mobiel. Voordat ik begon met het ontwerpen van de mobiele versie, heb ik eerst de huisstijl geïnventariseerd (zie onderstaande afbeelding). De grootste uitdaging hierbij was het navigatiemenu. Op desktop oogt dit menu behoorlijk groot en log, waardoor het een uitdaging was om dit op mobiel op een gebruiksvriendelijke manier vorm te geven (zie belangrijke features). Daarnaast zijn alle contentblokken zo gepositioneerd dat ze op mobiel eenvoudig leesbaar en goed bruikbaar zijn voor de gebruiker.
 
 Styleguide:
 
@@ -49,7 +52,7 @@ Linkje naar de pagina: https://ambersr.github.io/the-startup-responsive-interact
 ### Belangrijke features:
 - Interactief element (Toevoegen aan winkel wagen)
 
-Zodra je een product toevoegd aan je winkelwagen wordt een animatie in gang gezet. Als je op de knop klikt krijg je een pop up met 'Toegevoegd aan winkelwagen' en daarnaast wordt het aantal in het winkelwagen aangepast. Voor toegankelijkheid zijn er een aantal extra labels toegevoegd zoals 'toevoegen aan winkelwagen'.
+Zodra je een product toevoegd aan je winkelwagen wordt een animatie in gang gezet. Voor toegankelijkheid zijn er labels toegevoegd zoals 'toevoegen aan winkelwagen'. Dit label is een voorbeeld van de feedforward voor de gebruiker. Als je op de knop klikt krijg je een pop up met 'Toegevoegd aan winkelwagen' en daarnaast wordt het aantal in het winkelwagen aangepast. Dit is feedback voor de gebruiker.
 
 <img width="300" alt="image" src="https://github.com/user-attachments/assets/cac6be8d-0570-42a2-94ec-2deb9a0f2335" />
 
