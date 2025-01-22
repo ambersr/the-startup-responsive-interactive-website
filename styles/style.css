@@ -344,8 +344,8 @@ header {
                 align-content: center;
                 flex-wrap: wrap;
 
-                &:before {
-                    content: url('/assets/check-groen.svg');
+                &::before {
+                    content: url('../assets/check-groen.svg');
                     margin: 3px 3px 0px 0px;
                 }
 
