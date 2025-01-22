@@ -88,13 +88,12 @@ header {
             display: flex;
             flex-direction: row;
             align-items:center;
+
+            &::before {
+                content: url('../assets/check-groen.svg');
+                margin: 5px 3px 0px 0px;
+            }
         }
-
-         .usp-besteld::before {
-             content: url('/assets/check-groen.svg');
-             margin: 5px 3px 0px 0px;
-         }
-
 
         .sterren {
             width: 11em;
@@ -102,7 +101,7 @@ header {
             flex-direction: row;
 
             &::before {
-                content: url('/assets/4.5-sterren.svg');
+                content: url('../assets/4.5-sterren.svg');
                 margin: 3px 3px 0px 0px;
             }
         }
