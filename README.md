@@ -17,7 +17,20 @@ De opdrachtgever heeft de volgende vraag aan mij opgesteld: ontwikkel een mobile
   * [Bronnen](#bronnen)
 
 ## Beschrijving
-### Het ontwerp
+
+### Responsive
+De doelstelling van dit project is het mobile-first werken. Hierbij staat mobiel schermgrootte centraal en wordt het ontwerp vanuit een mobiel ontwikkeld. De website bevat meerdere breakpoints: 820px, 1120px en 1600px. Deze breakpoints zijn toegepast met mediaqueries.
+
+Schermbreedte < 820px:
+<img width="300" alt="image" src="https://github.com/user-attachments/assets/369543b0-fc18-4462-8eb6-f4bb9f0d7ef5" />
+
+Schermbreedte > 820px:
+<img width="300" alt="image" src="https://github.com/user-attachments/assets/369543b0-fc18-4462-8eb6-f4bb9f0d7ef5" />
+
+Schermbreedte > 1120px;
+<img width="300" alt="image" src="https://github.com/user-attachments/assets/7fec0855-a817-4b9e-9af9-8064437ffb5c" />
+
+### Ontwerpkeuzes
 Er is een desktop design aangeleverd door de opdrachtgever. Hij heeft me de opdracht gegeven om deze op mobiel verder uit te werken. Voordat ik met het ontwerpen van de mobiele versie aan de slag ben gegaan heb ik de huisstijl geïnventariseerd (zie onderstaande afbeelding). De grootste uitdaging was het navigatie menu, deze is op desktop vrij log/groot om te zien, aan mij de uitdaging om deze op mobiel zo goed mogelijk naar voren te laten komen. Alle contentblokken zijn op mobiel zo gepositioneerd dat deze voor  de gebruiker makkelijk leesbaar en bruikbaar is.
 
 Styleguide:
@@ -48,13 +61,31 @@ Het navigatie menu is op mobiel responsive gemaakt. Daarbij is gekeken naar elem
 
 ## Kenmerken
 ### Toegankelijkheid HTML
-De HTML bevat code voor een skiplink. Op deze manier kunnen screenreader gebruikers de navigatie overslaan. Ook hebben een aantal HTML-elementen hebben aria-labels toegevoegd gekregen en hebben alle elementen een semantieke functionaliteit. 
+De HTML bevat code voor een skiplink. Op deze manier kunnen screenreader gebruikers de navigatie overslaan. Ook hebben een aantal HTML-elementen hebben aria-labels toegevoegd gekregen en hebben alle elementen een semantieke functionaliteit.
+
+Skiplink:
+https://github.com/ambersr/the-startup-responsive-interactive-website/blob/82aeedfc009d2bd0d1fb9ea333f6ab60ace1d6e7/index.html#L15-L16
+
+Arialabels:
+https://github.com/ambersr/the-startup-responsive-interactive-website/blob/82aeedfc009d2bd0d1fb9ea333f6ab60ace1d6e7/index.html#L21-L23
 
 ### Belangrijke aspecten in CSS
 De styling wordt ingeladen aan de hand van een stylesheet waarin het huisstijl vast staat. Daarnaast wordt er een aparte CSS bestand gebruikt om de overige styling van de pagina's aan te passen.
 
+Stylesheet: 
+https://github.com/ambersr/the-startup-responsive-interactive-website/blob/main/styles/stylesheet.css
+
+Overige styling:
+https://github.com/ambersr/the-startup-responsive-interactive-website/blob/main/styles/style.css
+
 ### Belangrijke aspecten Javascript
 De Javascript wordt gebruikt om de animatie van het openklappen en dichtklappen van het hamburger menu te functioneren. Daarnaast wordt dit ook gebruik voor de functionaliteit van het toevoegen van een product aan winkelwagen.
+
+Animatie hamburger menu:
+https://github.com/ambersr/the-startup-responsive-interactive-website/blob/82aeedfc009d2bd0d1fb9ea333f6ab60ace1d6e7/scripts/script.js#L1-L20
+
+Animatie product in winkelwagen:
+https://github.com/ambersr/the-startup-responsive-interactive-website/blob/82aeedfc009d2bd0d1fb9ea333f6ab60ace1d6e7/scripts/script.js#L46-L102
 
 ## Code conventies
 ### Ademruimte en inspringen
@@ -78,8 +109,7 @@ De naamgeving van classes/variabelen hebben een logische/bijpassende naam.
 https://github.com/ambersr/the-startup-responsive-interactive-website/blob/13c38ce4bfe7a47ea06d41c98845bf681b960112/styles/stylesheet.css#L9-L20
 
 ## Bronnen
-- Huisstijl (kleuren en fonts uit de website gehaald) Linkje: https://bieb-in-bloei.vercel.app/
-- Figma bestand (High-fi ontwerp alle pagina's) Linkje: https://www.figma.com/design/DXJVOUapnTVZWHXkFpcr0I/FDND-projecten?node-id=62-2304&t=5PNDDUMVCjG4DIYr-1
+- Figma bestand (High-fi ontwerp) Linkje: https://www.figma.com/design/khZWTkmMq5v72YZ32GvtH3/Lab-Digital---Design-Challenge?node-id=541-1684&t=GQKxx2KdtEBUFXMI-1
 
 
 ## Licentie
