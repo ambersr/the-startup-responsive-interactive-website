@@ -84,10 +84,24 @@ header {
             padding: 0.4em 2em 0.4em 2em;
         }
 
+        .usp-besteld {
+            display: flex;
+            flex-direction: row;
+            align-items:center;
+        }
+
+         .usp-besteld::before {
+             content: url('/assets/check-groen.svg');
+             margin: 5px 3px 0px 0px;
+         }
+
+
         .sterren {
             width: 11em;
+            display: flex;
+            flex-direction: row;
 
-            &:before {
+            &::before {
                 content: url('/assets/4.5-sterren.svg');
                 margin: 3px 3px 0px 0px;
             }
@@ -99,6 +113,17 @@ header {
             gap: 1em;
             width: unset;
             padding: 0;
+            align-items: center;
+
+            .divider-vertical {
+                background-color: #d6d6d6;
+                width: 1px;
+                height: 2em;
+            }
+
+            a {
+                text-decoration: none;
+            }
         }
     }
 
@@ -268,6 +293,7 @@ header {
 
                     a {
                         list-style-type: none;
+                        text-decoration: none;
                     }
                 }
 
@@ -309,7 +335,7 @@ header {
             }
 
             .usp-besteld:before {
-                content: url('../assets/check-groen.svg');
+                content: url('/assets/check-groen.svg');
                 margin: 3px 3px 0px 0px;
             }
 
@@ -318,6 +344,11 @@ header {
                 flex-direction: row;
                 align-content: center;
                 flex-wrap: wrap;
+
+                &:before {
+                    content: url('/assets/check-groen.svg');
+                    margin: 3px 3px 0px 0px;
+                }
 
                 @media screen and (min-width: 960px) {
                     display: none;
