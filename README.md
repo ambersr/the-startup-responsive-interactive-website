@@ -21,7 +21,7 @@ De opdrachtgever heeft de volgende vraag aan mij opgesteld: ontwikkel een mobile
 ### Responsive
 Het doel van dit project is om te werken volgens het mobile-first principe. Dit houdt in dat het ontwerp wordt ontwikkeld met een mobiele schermgrootte als uitgangspunt. De website maakt gebruik van meerdere breakpoints, namelijk 820px en 1120px, die zijn geïmplementeerd met behulp van mediaqueries.
 
-Schermbreedte < 820px:
+Schermbreedte < 920px:
 
 <img width="200" alt="image" src="https://github.com/user-attachments/assets/f54e5e5b-9d7b-4957-a7bd-9d56f401610c" />
 
@@ -32,6 +32,10 @@ Schermbreedte > 820px:
 Schermbreedte > 1120px;
 
 <img width="500" alt="image" src="https://github.com/user-attachments/assets/5e2ebdad-dc43-4cd4-9fde-a01059a4142c" />
+
+Schermbreedte > 1600px;
+
+<img width="600" alt="image" src="https://github.com/user-attachments/assets/cfab7cd7-3d3b-4a4b-9c91-447ec3af9f4b" />
 
 ### Ontwerpkeuzes
 De opdrachtgever heeft een desktopdesign aangeleverd en mij gevraagd om dit verder uit te werken voor mobiel. Voordat ik begon met het ontwerpen van de mobiele versie, heb ik eerst de huisstijl geïnventariseerd (zie onderstaande afbeelding). De grootste uitdaging hierbij was het navigatiemenu. Op desktop oogt dit menu behoorlijk groot en log, waardoor het een uitdaging was om dit op mobiel op een gebruiksvriendelijke manier vorm te geven (zie belangrijke features). Daarnaast zijn alle contentblokken zo gepositioneerd dat ze op mobiel eenvoudig leesbaar en goed bruikbaar zijn voor de gebruiker.
