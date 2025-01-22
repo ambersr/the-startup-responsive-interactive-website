@@ -320,13 +320,17 @@ header {
     display: flex;
     flex-direction: column;
     background-image: url(../assets/banner-home-wcs.jpg);
-    background-position: 70% -20%;
+    background-position-y: 0%;
+    background-position-x: 70%;
     background-repeat: no-repeat;
-    background-size: cover;
     height: 70vh;
     width: 100%;
     padding-top: 10em;
     margin: -6.5em 0em 0em 0em;
+
+      @media screen and (min-width: 920px) {
+          background-size: cover;
+      }
 
     @media screen and (min-width: 1120px) {
         margin: -9em 0em 0em 0em;
