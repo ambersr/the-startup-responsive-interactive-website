@@ -19,7 +19,7 @@ De opdrachtgever heeft de volgende vraag aan mij opgesteld: ontwikkel een mobile
 ## Beschrijving
 
 ### Responsive
-Het doel van dit project is om te werken volgens het mobile-first principe. Dit houdt in dat het ontwerp wordt ontwikkeld met een mobiele schermgrootte als uitgangspunt. De website maakt gebruik van meerdere breakpoints, namelijk 820px en 1120px, die zijn geïmplementeerd met behulp van mediaqueries.
+Het doel van dit project is om te werken volgens het mobile-first principe. Dit houdt in dat het ontwerp wordt ontwikkeld met een mobiele schermgrootte als uitgangspunt. De website maakt gebruik van meerdere breakpoints, namelijk 920px en 1120px, die zijn geïmplementeerd met behulp van mediaqueries.
 
 Schermbreedte < 920px:
 
