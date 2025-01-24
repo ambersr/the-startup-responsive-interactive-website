@@ -40,6 +40,10 @@ Schermbreedte > 1600px;
 ### Ontwerpkeuzes
 De opdrachtgever heeft een desktopdesign aangeleverd en mij gevraagd om dit verder uit te werken voor mobiel. Voordat ik begon met het ontwerpen van de mobiele versie, heb ik eerst de huisstijl geïnventariseerd (zie onderstaande afbeelding). De grootste uitdaging hierbij was het navigatiemenu. Op desktop oogt dit menu behoorlijk groot en log, waardoor het een uitdaging was om dit op mobiel op een gebruiksvriendelijke manier vorm te geven (zie belangrijke features). Daarnaast zijn alle contentblokken zo gepositioneerd dat ze op mobiel eenvoudig leesbaar en goed bruikbaar zijn voor de gebruiker.
 
+Figma ontwerp:
+
+https://www.figma.com/design/khZWTkmMq5v72YZ32GvtH3/Lab-Digital---Design-Challenge?node-id=541-1684&t=OK7P883CfqxEA3d6-0
+
 Styleguide:
 
 <img width="794" alt="image" src="https://github.com/user-attachments/assets/fa8182ef-588a-41a3-8494-935edcefc2d2" />
