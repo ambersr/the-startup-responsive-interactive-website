@@ -62,6 +62,13 @@ Linkje naar de pagina: https://ambersr.github.io/the-startup-responsive-interact
 
 Zodra je een product toevoegd aan je winkelwagen wordt een animatie in gang gezet. Voor toegankelijkheid zijn er labels toegevoegd zoals 'toevoegen aan winkelwagen'. Dit label is een voorbeeld van de feedforward voor de gebruiker. Als je op de knop klikt krijg je een pop up met 'Toegevoegd aan winkelwagen' en daarnaast wordt het aantal in het winkelwagen aangepast. Dit is feedback voor de gebruiker.
 
+Feedback:
+* Pop up 'Toegevoegd aan winkelwagen'.
+* Winkelwagen aantal veranderd in de navbar.
+
+Feedforward:
+* Label 'Toevoegen aan winkelwagen'
+
 <img width="300" alt="image" src="https://github.com/user-attachments/assets/cac6be8d-0570-42a2-94ec-2deb9a0f2335" />
 
 - Responsive navigatie menu
