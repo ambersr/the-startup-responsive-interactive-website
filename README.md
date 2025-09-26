@@ -3,6 +3,8 @@ Tijdens sprint 5 heb ik me verdiept in interacties met JavaScript. Alle leerstof
 
 Linkje naar de pagina: https://ambersr.github.io/the-startup-responsive-interactive-website/
 
+<img width="1470" height="795" alt="image" src="https://github.com/user-attachments/assets/9f7a4951-98ac-4d87-9cd6-0af50c57a59e" />
+
 #### Wie is Lab Digital?
 Lab Digital is een jong dynamisch bedrijf opgericht in 2015. Ze ontwikkelen webshops voor b2b en b2c bedrijven. Daarnaast beschikken ze over een groot ervaren team met expertise in technologie. Ze onderscheiden zich van andere bedrijven door het leveren van hoogwaardige digitale oplossingen en ze staan bekend om het bouwen van langdurige, betrouwbare samenwerkingen met klanten.
 
